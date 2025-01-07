@@ -1,0 +1,69 @@
+﻿@model project.Data.Models.Domain.UserLoginModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow border-0">
+                <div class="card-body p-4">
+                    <h3 class="text-center mb-4 text-dark">Login</h3>
+
+                    @if (TempData["msg"] != null)
+                    {
+                        <div class="alert alert-info text-center">@TempData["msg"]</div>
+                    }
+
+                    <form asp-action="Login" method="post" id="loginForm" autocomplete="off">
+                        <div class="form-group mb-3">
+                            <label asp-for="Role" class="form-label text-muted">Select Role</label>
+                            <select asp-for="Role" class="form-control border-0 shadow-sm">
+                                <option value="Admin">Admin</option>
+                                <option value="HRManager">HR Manager</option>
+                                <option value="Employee">Employee</option>
+                            </select>
+                            <span asp-validation-for="Role" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Username" class="form-label text-muted">Username</label>
+                            <input asp-for="Username" class="form-control border-0 shadow-sm" placeholder="Enter your username" autocomplete="off" />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Password" class="form-label text-muted">Password</label>
+                            <input asp-for="Password" type="password" class="form-control border-0 shadow-sm" placeholder="Enter your password" autocomplete="off" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 shadow-sm">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <a asp-action="ForgotPassword">Forgot Password?</a>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <small class="text-muted">Don't have an account? <a asp-action="SignUp" class="text-primary">Sign Up</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Clear input fields manually
+            document.querySelectorAll('input').forEach(function (input) {
+                input.value = '';
+            });
+
+            // Clear the select (role) dropdown value
+            document.querySelector('select').selectedIndex = -1; // Reset to first option (Admin)
+        });
+    </script>
+    <partial name="_ValidationScriptsPartial" />
+}

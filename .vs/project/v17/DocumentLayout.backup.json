@@ -1,0 +1,466 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\hrdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\hrdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\employeemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\employeemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\payrollmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\payrollmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\_adminnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_adminnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\dashboardoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\dashboardoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\dataaccess\\sqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\dataaccess\\sqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\dataaccess\\isqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\dataaccess\\isqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\models\\domain\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\models\\domain\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\allowance\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\allowance\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T18:41:29.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Program.cs",
+              "RelativeDocumentMoniker": "project.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Program.cs",
+              "RelativeToolTip": "project.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T15:36:30.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PayrollManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:57:26.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:57:48.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HRDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:00:42.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\UserManagement.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\UserManagement.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\UserManagement.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\UserManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:00:50.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_AdminNavbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:04:11.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAwAAACAM/B0a34cwAkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T10:35:47.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardOverview.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:57:52.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:00:34.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:13:40.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:13:22.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:13:20.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "project.UI\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.Development.json",
+              "RelativeToolTip": "project.UI\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-02T16:16:50.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuditLogs.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:00:36.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:12:37.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SqlDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\SqlDataAccess.cs",
+              "RelativeDocumentMoniker": "project.Data\\DataAccess\\SqlDataAccess.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\SqlDataAccess.cs",
+              "RelativeToolTip": "project.Data\\DataAccess\\SqlDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:10:52.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISqlDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "RelativeDocumentMoniker": "project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "RelativeToolTip": "project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:10:43.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\Users.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\Users.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\Users.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:18:08.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\AuditLog.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\AuditLog.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\AuditLog.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:19:07.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:19:31.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Reports.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:58:36.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:59:27.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:19:40.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserLoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T18:34:41.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Allowance\\Add.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Allowance\\Add.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Allowance\\Add.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Allowance\\Add.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T18:24:42.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "project.UI\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.json",
+              "RelativeToolTip": "project.UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T18:52:14.5Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

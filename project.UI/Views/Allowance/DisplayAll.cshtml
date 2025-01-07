@@ -1,0 +1,42 @@
+﻿@model IEnumerable< Allowance> 
+@{
+   
+}
+
+<h3>Allowance List </h3>
+<div class="my-2">
+    <a href="/Allowance/Add" class="btn btn-info">Add more</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Allowance_Name
+                </th>
+                <th>
+                    Description
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var allowance in Model)
+            {
+                <tr>
+                    <td>
+                        @allowance.Allowance_Name
+                    </td>
+                    <td>
+                        @allowance.Description
+                    </td>
+                    <td>
+                        <a href="/Allowance/Edit?id=@allowance.Id " class="btn btn-success">Edit</a>
+                        <a href="/Allowance/Delete?id=@allowance.Id" onclick="return window.confirm('Are you Sure?')"class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

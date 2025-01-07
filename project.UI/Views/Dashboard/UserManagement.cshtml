@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "User Management";
+}
+
+@* Include the Navbar *@
+@await Html.PartialAsync("_AdminNavbar")
+
+@* Top Navigation Bar *@
+
+
+@* Hero Section *@
+<div class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1 class="fw-bold">Manage System Users</h1>
+            <p class="lead">Add, edit, deactivate users, and assign roles with ease.</p>
+            <div class="d-flex gap-3">
+                <a href="#" class="btn btn-dark">Add User</a>
+                <a href="#" class="btn btn-outline-dark">Edit User</a>
+                <a href="#" class="btn btn-outline-dark">Deactivate User</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+@* Role Management Section *@
+<div class="container mt-5">
+    <h3 class="fw-bold mb-3">Assign User Roles</h3>
+    <p>Define user roles to ensure proper access and permissions.</p>
+    <div class="d-flex gap-3">
+        <a href="#" class="btn btn-outline-dark">Admin</a>
+        <a href="#" class="btn btn-outline-dark">HR Manager</a>
+        <a href="#" class="btn btn-outline-dark">Employee</a>
+    </div>
+</div>
+
+@* User List Section *@
+<div class="container mt-5">
+    <h3 class="fw-bold mb-3">User List</h3>
+    <table class="table table-bordered table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>john@example.com</td>
+                <td>Admin</td>
+                <td>Active</td>
+                <td>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                    <a href="#" class="btn btn-sm btn-outline-danger">Deactivate</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>jane@example.com</td>
+                <td>HR Manager</td>
+                <td>Active</td>
+                <td>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+                    <a href="#" class="btn btn-sm btn-outline-danger">Deactivate</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,35 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/Dashboard/DashboardOverview"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Dashboard Overview" ? "active" : "")" href="/Dashboard/DashboardOverview">Dashboard Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Attendance" ? "active" : "")" href="/Dashboard/UserManagement">User Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Payroll Management" ? "active" : "")" href="/Dashboard/PayrollManagement">Payroll Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Employee Management" ? "active" : "")" href="/Dashboard/EmployeeManagement">Employee Management</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Reports" ? "active" : "")" href="/Dashboard/Reports">Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Settings" ? "active" : "")" href="/Dashboard/Settings">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Audit Trials" ? "active" : "")" href="/Dashboard/AuditLogs">Audit Logs</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

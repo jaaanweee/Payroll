@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = ""; // Set the page title accordingly
+}
+@* Include the navbar *@
+@await Html.PartialAsync("_AdminNavbar")
+
+<div class="container mt-4">
+    <h2 class="text-dark">@ViewData["Title"]</h2>
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Manage Employees</h5>
+                    <p class="card-text">
+                        Add, edit, or remove employee records efficiently. Keep your employee database up-to-date.
+                    </p>
+                    <button class="btn btn-dark">Manage Employees</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Employee List</h5>
+                    <p class="card-text">
+                        View the list of employees with advanced search, sort, and filter options.
+                    </p>
+                    <button class="btn btn-dark">View Employee List</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Employee Profiles</h5>
+                    <p class="card-text">
+                        Access detailed profiles with personal details, salary structure, attendance, leave history, and payroll history.
+                    </p>
+                    <button class="btn btn-dark">View Profiles</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-dark">Bulk Upload</h5>
+                    <p class="card-text">
+                        Import employee data in bulk using a CSV file for quick and efficient updates.
+                    </p>
+                    <button class="btn btn-dark">Bulk Upload</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5; /* Light grey background */
+    }
+
+    .card {
+        background-color: #ffffff; /* White card background */
+        border: none;
+        border-radius: 8px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 18px;
+        color: #333; /* Dark grey text */
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #555; /* Medium grey text */
+    }
+
+    .btn-dark {
+        background-color: #333; /* Dark grey button */
+        border-color: #333;
+        color: #fff;
+    }
+
+    .btn-dark:hover {
+        background-color: #555; /* Lighter grey on hover */
+        border-color: #555;
+    }
+</style>

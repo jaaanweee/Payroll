@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Dashboard Overview";
+}
+
+@* Include the Navbar *@
+@await Html.PartialAsync("_AdminNavbar")
+
+@* Top Navigation Bar *@
+
+
+@* Main Dashboard Section *@
+<div class="container mt-4">
+    <div class="row g-4">
+
+        @* Left Panel: Key Metrics *@
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="p-4 bg-light rounded">
+                <h1 class="fw-bold">DASHBOARD OVERVIEW</h1>
+                <p>Track and manage your workforce and payroll operations effortlessly.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Total Employees:</strong> 120</li>
+                    <li><strong>Active Employees:</strong> 110</li>
+                    <li><strong>Pending Leave Requests:</strong> 5</li>
+                    <li><strong>Payroll Processed This Month:</strong> $50,000</li>
+                </ul>
+            </div>
+        </div>
+
+        @* Right Panel: Notifications/Alerts *@
+        <div class="col-md-6 position-relative">
+            <div class="bg-light rounded p-4 h-100">
+                <h5>Notifications & Alerts</h5>
+                <ul class="list-group">
+                    <li class="list-group-item">3 Pending Leave Approvals</li>
+                    <li class="list-group-item">Payroll Due Tomorrow</li>
+                    <li class="list-group-item">New Employee Added</li>
+                </ul>
+                <button class="btn btn-dark position-absolute" style="bottom: 20px; right: 20px;">VIEW DETAILS</button>
+            </div>
+        </div>
+    </div>
+
+    @* Bottom Section: Quick Links *@
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5>Add Employee</h5>
+                    <p>Quickly onboard a new team member.</p>
+                    <a href="#" class="btn btn-outline-dark">Go</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5>Generate Payroll</h5>
+                    <p>Process monthly salaries with one click.</p>
+                    <a href="#" class="btn btn-outline-dark">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Action Buttons *@
+    <div class="d-flex justify-content-center gap-3 mt-4">
+        <a href="#" class="btn btn-outline-dark">Add Employee</a>
+        <a href="#" class="btn btn-outline-dark">VIEW REPORTS</a>
+        <a href="#" class="btn btn-dark">SETTINGS</a>
+    </div>
+</div>
