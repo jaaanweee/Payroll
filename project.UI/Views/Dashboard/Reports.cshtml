@@ -1,10 +1,118 @@
 ﻿@{
-    ViewData["Title"] = "Reports"; // Set the page title accordingly
+    ViewData["Title"] = ""; // Set the page title
 }
+
 @* Include the navbar *@
 @await Html.PartialAsync("_AdminNavbar")
 
-<div class="container mt-4">
-    <h2>@ViewData["Title"]</h2>
-    @* Page-specific content goes here *@
+<div class="container-fluid p-4 bg-light">
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold">@ViewData["Title"]</h1>
+        <p class="lead">Manage and generate reports with ease. View prebuilt reports or create custom ones tailored to your needs.</p>
+    </div>
+
+    <div class="row">
+        <!-- Prebuilt Reports Section -->
+        <div class="col-lg-6 mb-4">
+            <div class="p-4 bg-white shadow-sm rounded">
+                <h4 class="text-dark text-uppercase fw-bold mb-3">Prebuilt Reports</h4>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Payroll Summary</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Tax Deductions Report</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Department-Wise Salary Analysis</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Attendance Report</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Leave Utilization Report</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Custom Reports Section -->
+        <div class="col-lg-6 mb-4">
+            <div class="p-4 bg-white shadow-sm rounded">
+                <h4 class="text-dark text-uppercase fw-bold mb-3">Custom Reports</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="reportName" class="form-label">Report Name</label>
+                        <input type="text" class="form-control" id="reportName" placeholder="Enter report name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reportFilters" class="form-label">Filters</label>
+                        <textarea class="form-control" id="reportFilters" rows="3" placeholder="Define filters for the report"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button type="submit" class="btn btn-dark px-4">Generate Report</button>
+                        <div>
+                            <button type="button" class="btn btn-outline-dark me-2 px-3">Export to PDF</button>
+                            <button type="button" class="btn btn-outline-dark px-3">Export to Excel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: white;
+    }
+
+    .bg-light {
+        background-color: #f4f4f4 !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .rounded {
+        border-radius: 16px;
+    }
+
+    .list-unstyled li {
+        transition: background-color 0.3s ease;
+    }
+
+        .list-unstyled li:hover {
+            background-color: #f0f0f0;
+        }
+
+    .form-control {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+    }
+
+        .form-control:focus {
+            border-color: #343a40;
+            box-shadow: 0 0 5px rgba(52, 58, 64, 0.5);
+        }
+
+    .btn-dark {
+        background-color: #343a40;
+        border: none;
+    }
+
+        .btn-dark:hover {
+            background-color: #212529;
+        }
+</style>

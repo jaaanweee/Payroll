@@ -1,10 +1,135 @@
 ﻿@{
-    ViewData["Title"] = "Settings"; // Set the page title accordingly
+    ViewData["Title"] = ""; // Set the page title
 }
+
 @* Include the navbar *@
 @await Html.PartialAsync("_AdminNavbar")
 
-<div class="container mt-4">
-    <h2>@ViewData["Title"]</h2>
-    @* Page-specific content goes here *@
+<div class="container-fluid p-4 bg-light">
+    <div class="text-center mb-4">
+        <h1 class="display-5 fw-bold">@ViewData["Title"]</h1>
+        <p class="lead">Manage user roles, compliance settings, and system preferences to keep your system optimized and aligned with organizational needs.</p>
+    </div>
+
+    <div class="row">
+        <!-- User Role Management Section -->
+        <div class="col-lg-4 mb-4">
+            <div class="p-4 bg-white shadow-sm rounded">
+                <h4 class="text-dark text-uppercase fw-bold mb-3">User Role Management</h4>
+                <p>Define roles and permissions for users to ensure secure and role-based access.</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Add User Role</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Add</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Edit Permissions</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Edit</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Remove User Role</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Remove</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Compliance Settings Section -->
+        <div class="col-lg-4 mb-4">
+            <div class="p-4 bg-white shadow-sm rounded">
+                <h4 class="text-dark text-uppercase fw-bold mb-3">Compliance Settings</h4>
+                <p>Update policies and settings to meet compliance requirements.</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Tax Rate Updates</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Update</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Overtime Policies</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Edit</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Holiday Calendar</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Configure</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- General System Settings Section -->
+        <div class="col-lg-4 mb-4">
+            <div class="p-4 bg-white shadow-sm rounded">
+                <h4 class="text-dark text-uppercase fw-bold mb-3">General System Settings</h4>
+                <p>Customize system settings for backups, notifications, and branding.</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Backup & Restore</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Manage</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                        <span>Email & SMS Notifications</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Configure</button>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center py-2">
+                        <span>Theme & Branding</span>
+                        <button class="btn btn-outline-dark btn-sm px-4">Customize</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: white;
+    }
+
+    .bg-light {
+        background-color: #f4f4f4 !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .rounded {
+        border-radius: 16px;
+    }
+
+    .list-unstyled li {
+        transition: background-color 0.3s ease;
+    }
+
+    .list-unstyled li:hover {
+        background-color: #f0f0f0;
+    }
+
+    .btn-outline-dark {
+        border: 1px solid #343a40;
+    }
+
+    .form-control {
+        border: 2px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .form-control:focus {
+        border-color: #343a40;
+        box-shadow: 0 0 5px rgba(52, 58, 64, 0.5);
+    }
+
+    .btn-dark {
+        background-color: #343a40;
+        border: none;
+    }
+
+    .btn-dark:hover {
+        background-color: #212529;
+    }
+</style>
