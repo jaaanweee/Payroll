@@ -10,7 +10,7 @@
                     <a class="nav-link @(ViewData["Title"] == "Dashboard Overview" ? "active" : "")" href="/Dashboard/DashboardOverview">Dashboard Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @(ViewData["Title"] == "Attendance" ? "active" : "")" href="/Dashboard/UserManagement">User Management</a>
+                    <a href="@Url.Action("UserManagement", "User")" class="nav-link @(ViewData["Title"] == "User Management" ? "active" : "")">User Management</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link @(ViewData["Title"] == "Payroll Management" ? "active" : "")" href="/Dashboard/PayrollManagement">Payroll Management</a>
@@ -25,10 +25,8 @@
                     <a class="nav-link @(ViewData["Title"] == "Settings" ? "active" : "")" href="/Dashboard/Settings">Settings</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @(ViewData["Title"] == "Audit Trials" ? "active" : "")" href="/Dashboard/AuditLogs">Audit Logs</a>
-
+                    <a class="nav-link @(ViewData["Title"] == "Audit Logs" ? "active" : "")" href="/Dashboard/AuditLogs">Audit Logs</a>
                 </li>
-
             </ul>
         </div>
     </div>

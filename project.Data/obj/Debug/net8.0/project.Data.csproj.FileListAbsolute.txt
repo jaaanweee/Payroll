@@ -10,3 +10,16 @@ C:\Users\User\source\repos\project\project.Data\obj\Debug\net8.0\project.Data.dl
 C:\Users\User\source\repos\project\project.Data\obj\Debug\net8.0\refint\project.Data.dll
 C:\Users\User\source\repos\project\project.Data\obj\Debug\net8.0\project.Data.pdb
 C:\Users\User\source\repos\project\project.Data\obj\Debug\net8.0\ref\project.Data.dll
+D:\College-Project\Payroll\project.Data\bin\Debug\net8.0\project.Data.deps.json
+D:\College-Project\Payroll\project.Data\bin\Debug\net8.0\project.Data.dll
+D:\College-Project\Payroll\project.Data\bin\Debug\net8.0\project.Data.pdb
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.csproj.AssemblyReference.cache
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.AssemblyInfoInputs.cache
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.AssemblyInfo.cs
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.csproj.CoreCompileInputs.cache
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.sourcelink.json
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.dll
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\refint\project.Data.dll
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\project.Data.pdb
+D:\College-Project\Payroll\project.Data\obj\Debug\net8.0\ref\project.Data.dll

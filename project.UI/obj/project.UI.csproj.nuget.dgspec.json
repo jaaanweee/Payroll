@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\project\\project.UI\\project.UI.csproj": {}
+    "D:\\College-Project\\Payroll\\project.UI\\project.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj": {
+    "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj",
+        "projectUniqueName": "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj",
         "projectName": "project.Data",
-        "projectPath": "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj",
+        "projectPath": "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\project\\project.Data\\obj\\",
+        "outputPath": "D:\\College-Project\\Payroll\\project.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\project\\project.UI\\project.UI.csproj": {
+    "D:\\College-Project\\Payroll\\project.UI\\project.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\project\\project.UI\\project.UI.csproj",
+        "projectUniqueName": "D:\\College-Project\\Payroll\\project.UI\\project.UI.csproj",
         "projectName": "project.UI",
-        "projectPath": "C:\\Users\\User\\source\\repos\\project\\project.UI\\project.UI.csproj",
+        "projectPath": "D:\\College-Project\\Payroll\\project.UI\\project.UI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\project\\project.UI\\obj\\",
+        "outputPath": "D:\\College-Project\\Payroll\\project.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,8 +104,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj"
+              "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj": {
+                "projectPath": "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj"
               }
             }
           }
@@ -128,6 +128,20 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

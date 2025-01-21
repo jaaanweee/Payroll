@@ -1,12 +1,11 @@
-﻿@{
+﻿@model IEnumerable<project.Data.Models.Domain.Users>
+
+@{
     ViewData["Title"] = "User Management";
 }
 
 @* Include the Navbar *@
 @await Html.PartialAsync("_AdminNavbar")
-
-@* Top Navigation Bar *@
-
 
 @* Hero Section *@
 <div class="container mt-5">
@@ -15,12 +14,11 @@
             <h1 class="fw-bold">Manage System Users</h1>
             <p class="lead">Add, edit, deactivate users, and assign roles with ease.</p>
             <div class="d-flex gap-3">
-                <a href="#" class="btn btn-dark">Add User</a>
+                <a href="@Url.Action("Create", "User")" class="btn btn-dark">Add User</a>
                 <a href="#" class="btn btn-outline-dark">Edit User</a>
                 <a href="#" class="btn btn-outline-dark">Deactivate User</a>
             </div>
         </div>
-        
     </div>
 </div>
 
@@ -49,26 +47,28 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Admin</td>
-                <td>Active</td>
-                <td>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
-                    <a href="#" class="btn btn-sm btn-outline-danger">Deactivate</a>
-                </td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>jane@example.com</td>
-                <td>HR Manager</td>
-                <td>Active</td>
-                <td>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
-                    <a href="#" class="btn btn-sm btn-outline-danger">Deactivate</a>
-                </td>
-            </tr>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Username</td>
+                        <td>@user.Email</td>
+                        <td>@user.Role</td>
+
+                        <td>
+                            <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-sm btn-outline-primary">Edit</a>
+                            <a href="@Url.Action("Delete", "User", new { id = user.Id })" class="btn btn-sm btn-outline-danger">Deactivate</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center">No users found.</td>
+                </tr>
+            }
         </tbody>
     </table>
 </div>

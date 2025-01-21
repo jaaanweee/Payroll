@@ -17,103 +17,111 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = project.UI
 build_property.RootNamespace = project.UI
-build_property.ProjectDir = C:\Users\User\source\repos\project\project.UI\
+build_property.ProjectDir = D:\College-Project\Payroll\project.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\project\project.UI
+build_property.MSBuildProjectDirectory = D:\College-Project\Payroll\project.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Allowance/Add.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Allowance/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb3dhbmNlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Allowance/DisplayAll.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Allowance/DisplayAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb3dhbmNlXERpc3BsYXlBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Allowance/Edit.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Allowance/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsb3dhbmNlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/AdminDashboard.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/AdminDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEFkbWluRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/AuditLogs.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/AuditLogs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEF1ZGl0TG9ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/DashboardOverview.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/DashboardOverview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXERhc2hib2FyZE92ZXJ2aWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/EmployeeDashboard.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/EmployeeDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVtcGxveWVlRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/EmployeeManagement.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/EmployeeManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVtcGxveWVlTWFuYWdlbWVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/HRDashboard.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/HRDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEhSRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/PayrollManagement.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/PayrollManagement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFBheXJvbGxNYW5hZ2VtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/Reports.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/Reports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFJlcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/Settings.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Dashboard/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Dashboard/UserManagement.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFVzZXJNYW5hZ2VtZW50LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/source/repos/project/project.UI/Views/Home/Index.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Home/Privacy.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Login/Login.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Login/SignUp.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Login/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Shared/Error.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Shared/_AdminNavbar.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Shared/_AdminNavbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbk5hdmJhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/_ViewImports.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/College-Project/Payroll/project.UI/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/College-Project/Payroll/project.UI/Views/User/UserManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/College-Project/Payroll/project.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/_ViewStart.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/project/project.UI/Views/Shared/_Layout.cshtml]
+[D:/College-Project/Payroll/project.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-30b4q1a7vt

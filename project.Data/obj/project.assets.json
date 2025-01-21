@@ -1823,11 +1823,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj",
+      "projectUniqueName": "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj",
       "projectName": "project.Data",
-      "projectPath": "C:\\Users\\User\\source\\repos\\project\\project.Data\\project.Data.csproj",
+      "projectPath": "D:\\College-Project\\Payroll\\project.Data\\project.Data.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\project\\project.Data\\obj\\",
+      "outputPath": "D:\\College-Project\\Payroll\\project.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

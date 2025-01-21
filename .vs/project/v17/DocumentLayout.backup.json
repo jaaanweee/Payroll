@@ -1,114 +1,198 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\project\\",
+  "WorkspaceRootPath": "D:\\College-Project\\Payroll\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\hrdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\hrdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\employeemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\employeemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\payrollmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\payrollmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\_adminnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\shared\\_adminnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_adminnavbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\dashboardoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\dashboardoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\user\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\user\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\dataaccess\\sqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\dataaccess\\sqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\dataaccess\\isqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\dataaccess\\isqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\dataaccess\\isqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\dataaccess\\sqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\dataaccess\\sqldataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\models\\domain\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\repository\\allowancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\repository\\allowancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\dashboard\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|c:\\users\\user\\source\\repos\\project\\project.data\\models\\domain\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\models\\domain\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\userloginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\views\\allowance\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\allowance\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|c:\\users\\user\\source\\repos\\project\\project.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\models\\domain\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\userregistrationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\models\\domain\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\auditlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\login\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\login\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\reports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\payrollmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\payrollmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\hrdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\hrdashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\employeemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\employeemanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\employeedashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\employeedashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\dashboardoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\dashboardoverview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\dashboard\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\dashboard\\auditlogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\controllers\\allowancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\controllers\\allowancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\services\\ismsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\services\\ismsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\repository\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\repository\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\repository\\iallowancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\repository\\iallowancerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|d:\\college-project\\payroll\\project.data\\models\\domain\\allowance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCE611E7-96C2-456A-9FA4-57712ADA2ED9}|project.Data\\project.Data.csproj|solutionrelative:project.data\\models\\domain\\allowance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|d:\\college-project\\payroll\\project.ui\\views\\allowance\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAD13A39-E7A7-4C01-B2B7-5378B98AB2C9}|project.UI\\project.UI.csproj|solutionrelative:project.ui\\views\\allowance\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,7 +202,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,26 +210,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserManagement.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\User\\UserManagement.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\User\\UserManagement.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\User\\UserManagement.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\User\\UserManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T18:41:29.69Z",
+              "WhenOpened": "2025-01-21T17:02:30.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T16:17:14.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwCsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:45:35.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Program.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Program.cs",
               "RelativeDocumentMoniker": "project.UI\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Program.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Program.cs",
               "RelativeToolTip": "project.UI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T15:36:30.037Z",
               "EditorCaption": ""
@@ -153,310 +263,574 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PayrollManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T10:57:26.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmployeeManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T14:57:48.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HRDashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T11:00:42.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\UserManagement.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\UserManagement.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\UserManagement.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\UserManagement.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T11:00:50.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_AdminNavbar.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T11:04:11.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "project.UI\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "project.UI\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAwAAACAM/B0a34cwAkAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T10:35:47.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DashboardOverview.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T10:57:52.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "AdminDashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
               "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
               "RelativeToolTip": "project.UI\\Views\\Dashboard\\AdminDashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-14T11:00:34.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "_AdminNavbar.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\_AdminNavbar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T15:13:40.028Z"
+              "WhenOpened": "2024-11-14T11:04:11.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Repository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "project.Data\\Repository\\IUserRepository.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Repository\\IUserRepository.cs",
+              "RelativeToolTip": "project.Data\\Repository\\IUserRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T15:42:58.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\User\\Create.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAACAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-21T16:05:21.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ISqlDataAccess.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "RelativeDocumentMoniker": "project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "RelativeToolTip": "project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:10:43.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "project.Data\\Repository\\UserRepository.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "project.Data\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T15:46:00.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SqlDataAccess.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\DataAccess\\SqlDataAccess.cs",
+              "RelativeDocumentMoniker": "project.Data\\DataAccess\\SqlDataAccess.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\DataAccess\\SqlDataAccess.cs",
+              "RelativeToolTip": "project.Data\\DataAccess\\SqlDataAccess.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:10:52.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T15:13:22.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-06T15:13:20.191Z"
+              "Title": "AllowanceRepository.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Repository\\AllowanceRepository.cs",
+              "RelativeDocumentMoniker": "project.Data\\Repository\\AllowanceRepository.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Repository\\AllowanceRepository.cs",
+              "RelativeToolTip": "project.Data\\Repository\\AllowanceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:14:15.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "project.UI\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.Development.json",
-              "RelativeToolTip": "project.UI\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-02T16:16:50.222Z"
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\Users.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\Users.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\Users.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:18:08.677Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "AuditLogs.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T11:00:36.715Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "project.UI\\appsettings.json",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\appsettings.json",
+              "RelativeToolTip": "project.UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T18:52:14.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "project.UI\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "project.UI\\Controllers\\HomeController.cs",
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "project.UI\\appsettings.Development.json",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\appsettings.Development.json",
+              "RelativeToolTip": "project.UI\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:12:37.894Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-02T16:16:50.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "SqlDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\SqlDataAccess.cs",
-              "RelativeDocumentMoniker": "project.Data\\DataAccess\\SqlDataAccess.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\SqlDataAccess.cs",
-              "RelativeToolTip": "project.Data\\DataAccess\\SqlDataAccess.cs",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:13:20.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserLoginModel.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\UserLoginModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:10:52.054Z"
+              "WhenOpened": "2024-11-10T18:34:41.563Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ISqlDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\ISqlDataAccess.cs",
-              "RelativeDocumentMoniker": "project.Data\\DataAccess\\ISqlDataAccess.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\DataAccess\\ISqlDataAccess.cs",
-              "RelativeToolTip": "project.Data\\DataAccess\\ISqlDataAccess.cs",
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T16:10:43.757Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-20T16:26:02.092Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\Users.cs",
-              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\Users.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\Users.cs",
-              "RelativeToolTip": "project.Data\\Models\\Domain\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:18:08.677Z"
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "project.UI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "project.UI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA4AAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-20T17:01:40.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "AuditLog.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\AuditLog.cs",
-              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\AuditLog.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\AuditLog.cs",
-              "RelativeToolTip": "project.Data\\Models\\Domain\\AuditLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "Title": "UserRegistrationModel.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\UserRegistrationModel.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\UserRegistrationModel.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\UserRegistrationModel.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\UserRegistrationModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:19:07.789Z"
+              "WhenOpened": "2025-01-20T16:38:33.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T10:19:31.119Z"
+              "Title": "AuditLog.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\AuditLog.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\AuditLog.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\AuditLog.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\AuditLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:19:07.789Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Reports.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Reports.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\Reports.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Reports.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\Reports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T10:58:36.277Z"
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:06:01.507Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Settings.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Settings.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\Settings.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Dashboard\\Settings.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Dashboard\\Settings.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Login\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Login\\SignUp.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Login\\SignUp.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Login\\SignUp.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAUwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T10:59:27.481Z"
+              "WhenOpened": "2025-01-19T12:06:28.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAUwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T10:19:40.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UserLoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\UserLoginModel.cs",
-              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\UserLoginModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.Data\\Models\\Domain\\UserLoginModel.cs",
-              "RelativeToolTip": "project.Data\\Models\\Domain\\UserLoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T18:34:41.563Z"
+              "WhenOpened": "2025-01-20T16:25:07.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Allowance\\Add.cshtml",
-              "RelativeDocumentMoniker": "project.UI\\Views\\Allowance\\Add.cshtml",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\Views\\Allowance\\Add.cshtml",
-              "RelativeToolTip": "project.UI\\Views\\Allowance\\Add.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAHAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T18:24:42.047Z"
+              "WhenOpened": "2024-11-14T10:19:31.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.json",
-              "RelativeDocumentMoniker": "project.UI\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\project\\project.UI\\appsettings.json",
-              "RelativeToolTip": "project.UI\\appsettings.json",
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\Settings.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAUwIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:59:27.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Reports.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\Reports.cshtml",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAUwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:58:36.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PayrollManagement.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\PayrollManagement.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:57:26.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:19:40.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HRDashboard.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\HRDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:00:42.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "EmployeeManagement.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\EmployeeManagement.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T14:57:48.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "EmployeeDashboard.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\EmployeeDashboard.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\EmployeeDashboard.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\EmployeeDashboard.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\EmployeeDashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-20T16:21:44.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AuditLogs.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\AuditLogs.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T11:00:36.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "project.UI\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "project.UI\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:19:51.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T16:12:37.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DashboardOverview.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Dashboard\\DashboardOverview.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-14T10:57:52.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAADwv0MAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T10:35:47.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AllowanceController.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\AllowanceController.cs",
+              "RelativeDocumentMoniker": "project.UI\\Controllers\\AllowanceController.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Controllers\\AllowanceController.cs",
+              "RelativeToolTip": "project.UI\\Controllers\\AllowanceController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv1gAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:18:10.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ISmsService.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Services\\ISmsService.cs",
+              "RelativeDocumentMoniker": "project.Data\\Services\\ISmsService.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Services\\ISmsService.cs",
+              "RelativeToolTip": "project.Data\\Services\\ISmsService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-10T18:52:14.5Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:17:36.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "project.Data\\Services\\IEmailService.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Services\\IEmailService.cs",
+              "RelativeToolTip": "project.Data\\Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:16:50.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Repository\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "project.Data\\Repository\\ILoginRepository.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Repository\\ILoginRepository.cs",
+              "RelativeToolTip": "project.Data\\Repository\\ILoginRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:15:22.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IAllowanceRepository.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Repository\\IAllowanceRepository.cs",
+              "RelativeDocumentMoniker": "project.Data\\Repository\\IAllowanceRepository.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Repository\\IAllowanceRepository.cs",
+              "RelativeToolTip": "project.Data\\Repository\\IAllowanceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:14:50.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Repository\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "project.Data\\Repository\\LoginRepository.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Repository\\LoginRepository.cs",
+              "RelativeToolTip": "project.Data\\Repository\\LoginRepository.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAUwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:02:49.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Allowance.cs",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\Allowance.cs",
+              "RelativeDocumentMoniker": "project.Data\\Models\\Domain\\Allowance.cs",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.Data\\Models\\Domain\\Allowance.cs",
+              "RelativeToolTip": "project.Data\\Models\\Domain\\Allowance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T16:12:15.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T18:41:29.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:13:40.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T15:13:22.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\College-Project\\Payroll\\project.UI\\Views\\Allowance\\Add.cshtml",
+              "RelativeDocumentMoniker": "project.UI\\Views\\Allowance\\Add.cshtml",
+              "ToolTip": "D:\\College-Project\\Payroll\\project.UI\\Views\\Allowance\\Add.cshtml",
+              "RelativeToolTip": "project.UI\\Views\\Allowance\\Add.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwB4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T18:24:42.047Z",
+              "EditorCaption": ""
             }
           ]
         }

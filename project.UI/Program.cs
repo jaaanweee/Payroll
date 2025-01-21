@@ -10,6 +10,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<ISqlDataAccess,SqlDataAccess>();
 builder.Services.AddTransient<IAllowanceRepository, AllowanceRepository>();
 builder.Services.AddTransient<ILoginRepository, LoginRepository>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+
 
 
 
