@@ -1,10 +1,146 @@
 ﻿@{
-    ViewData["Title"] = "AuditLogs"; // Set the page title accordingly
+    ViewData["Title"] = "Audit Logs";
 }
-@* Include the navbar *@
 @await Html.PartialAsync("_AdminNavbar")
 
 <div class="container mt-4">
-    <h2>@ViewData["Title"]</h2>
-    @* Page-specific content goes here *@
+    <div class="header-section mb-4">
+        <h1 class="page-title">Audit Logs</h1>
+        <p class="subtitle">Track and review all system activities for compliance and security purposes.</p>
+    </div>
+
+    <div class="filter-section mb-4 d-flex justify-content-between align-items-center">
+        <div>
+            <span class="filter-title">Filter Logs:</span>
+            <select class="form-select" id="activityFilter">
+                <option value="all">All Activities</option>
+                <option value="login">Login</option>
+                <option value="update">Updates</option>
+                <option value="delete">Deletions</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" class="search-bar" id="searchAuditLogs" placeholder="Search by user, activity..." />
+        </div>
+    </div>
+
+    <div class="table-container">
+        <table class="custom-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Activity</th>
+                    <th>User</th>
+                    <th>Timestamp</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @* Loop through Audit Logs *@
+                @foreach (var log in Model.AuditLogs)
+                {
+                    <tr>
+                        <td>@log.Id</td>
+                        <td>@log.ActivityType</td>
+                        <td>@log.Username</td>
+                        <td>@log.Timestamp</td>
+                        <td>@log.Description</td>
+                        <td><a href="/AuditLogs/Details/@log.Id" class="btn btn-action">View</a></td>
+                    </tr>
+                }
+                @if (!Model.AuditLogs.Any())
+                {
+                    <tr>
+                        <td colspan="6" class="no-data">No audit logs found.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .header-section {
+        text-align: center;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .filter-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filter-title {
+        margin-right: 10px;
+        font-weight: 500;
+    }
+
+    .form-select, .search-bar {
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .table-container {
+        margin-top: 20px;
+    }
+
+    .custom-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+        .custom-table thead {
+            background-color: #f4f4f4;
+        }
+
+        .custom-table th, .custom-table td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .custom-table th {
+            font-weight: bold;
+        }
+
+        .custom-table tbody tr:hover {
+            background-color: #f9f9f9;
+        }
+
+    .no-data {
+        text-align: center;
+        color: #888;
+    }
+
+    .btn-action {
+        padding: 8px 12px;
+        color: #fff;
+        background-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+        .btn-action:hover {
+            background-color: #0056b3;
+        }
+</style>

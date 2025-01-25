@@ -1,0 +1,55 @@
+﻿@model IEnumerable<project.Data.Models.Domain.Users>
+
+@{
+    ViewData["Title"] = "Deactivate User";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Search Section -->
+<form method="get" action="@Url.Action("DeactivateUserPage", "User")">
+    
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" name="searchQuery" placeholder="Search by ID or Username" />
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+    </div>
+</form>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-light">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@user.Role</td>
+                    <td>
+                        <form method="post" action="@Url.Action("Deactivate", "User")" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="id" value="@user.Id" />
+                            <button type="submit" class="btn btn-sm btn-outline-warning">Deactivate</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-center">No users found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

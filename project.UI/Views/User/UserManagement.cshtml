@@ -15,8 +15,8 @@
             <p class="lead">Add, edit, deactivate users, and assign roles with ease.</p>
             <div class="d-flex gap-3">
                 <a href="@Url.Action("Create", "User")" class="btn btn-dark">Add User</a>
-                <a href="#" class="btn btn-outline-dark">Edit User</a>
-                <a href="#" class="btn btn-outline-dark">Deactivate User</a>
+                <a href="@Url.Action("EditUserPage", "User")" class="btn btn-outline-dark">Edit User</a>
+                <a href="@Url.Action("DeactivateUserPage","User")" class="btn btn-outline-dark">Deactivate User</a>
             </div>
         </div>
     </div>
@@ -42,8 +42,7 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Role</th>
-                <th>Status</th>
-                <th>Actions</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -56,10 +55,7 @@
                         <td>@user.Email</td>
                         <td>@user.Role</td>
 
-                        <td>
-                            <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-sm btn-outline-primary">Edit</a>
-                            <a href="@Url.Action("Delete", "User", new { id = user.Id })" class="btn btn-sm btn-outline-danger">Deactivate</a>
-                        </td>
+                       
                     </tr>
                 }
             }

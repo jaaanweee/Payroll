@@ -1,0 +1,29 @@
+﻿@model project.Data.Models.Domain.Users
+
+<h1>Edit User</h1>
+
+<form method="post" action="@Url.Action("Update", "User")">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="hidden" name="Password" value="@Model.Password" />
+    <input type="hidden" name="PhoneNumber" value="@Model.PhoneNumber" />
+
+    <div class="mb-3">
+        <label for="Username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="Username" name="Username" value="@Model.Username" />
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" />
+    </div>
+    <div class="mb-3">
+        <label for="Role" class="form-label">Role</label>
+        <select class="form-select" id="Role" name="Role" asp-for="Role">
+            <option value="Admin" selected="@Model.Role == " Admin"">Admin</option>
+            <option value="HR Manager" selected="@Model.Role == " HR Manager"">HR Manager</option>
+            <option value="Employee" selected="@Model.Role == " Employee"">Employee</option>
+        </select>
+
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

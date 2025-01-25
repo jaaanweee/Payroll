@@ -44,7 +44,10 @@ public class LoginRepository : ILoginRepository
             Username = username,
             Password = password
         });
-        return results.FirstOrDefault();
+        var user = results.FirstOrDefault();
+
+        
+        return user;
     }
 }
 
