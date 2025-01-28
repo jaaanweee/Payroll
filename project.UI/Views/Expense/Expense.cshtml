@@ -1,0 +1,160 @@
+﻿@model project.Data.Models.Domain.Expense
+@* Include the navbar *@
+@await Html.PartialAsync("_EmployeeNavbar")
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <!-- Submit Expense Reimbursement Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    @if (TempData["AlertMessage"] != null)
+                    {
+                        <div class="alert alert-success mt-3 message" role="alert">
+                            @TempData["AlertMessage"]
+                        </div>
+                    }
+                    <h5 class="card-title fw-bold">Submit Expense Reimbursement</h5>
+                    <form class="mt-3" method="post" asp-action="Expense" asp-controller="Expense" enctype="multipart/form-data">
+                        @* Hidden fields for LeaveID and EmployeeID *@
+                        <input type="hidden" asp-for="EmployeeID" value="4" />
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="expenseType" class="form-label">Expense Type</label>
+                                <select class="form-select" asp-for="ExpenseType">
+                                    <option value="Travel">Travel</option>
+                                    <option value="Accommodation">Accommodation</option>
+                                    <option value="Meals">Meals</option>
+                                    <option value="Office Supplies">Office Supplies</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="expenseDate" class="form-label">Expense Date</label>
+                                <input type="date" class="form-control" asp-for="ExpenseDate" id="expenseDate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="amount" class="form-label">Amount</label>
+                                <input type="number" class="form-control" asp-for="Amount" id="amount" placeholder="Enter amount">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="receipt" class="form-label">Upload Receipt</label>
+                                <input type="file" class="form-control" asp-for="ReceiptPath" id="receipt">
+
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" asp-for="Description" rows="3" placeholder="Enter expense description"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit Claim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Expense Tracking Section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Track Submitted Claims</h5>
+                    <table class="table table-bordered mt-3">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Expense Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-01-20</td>
+                                <td>Travel</td>
+                                <td>$120.00</td>
+                                <td class="text-warning">Pending</td>
+                                <td><button class="btn btn-link text-info">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-18</td>
+                                <td>Meals</td>
+                                <td>$45.00</td>
+                                <td class="text-success">Approved</td>
+                                <td><button class="btn btn-link text-info">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-15</td>
+                                <td>Office Supplies</td>
+                                <td>$25.00</td>
+                                <td class="text-danger">Rejected</td>
+                                <td><button class="btn btn-link text-info">View Details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .text-success {
+        color: #28a745;
+    }
+
+    .text-warning {
+        color: #ffc107;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+
+    .btn-dark {
+        background-color: #333;
+        border-color: #333;
+        color: #fff;
+    }
+
+    .btn-dark:hover {
+        background-color: #555;
+        border-color: #555;
+    }
+</style>

@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Dashboard Overview";
+}
+@* Include the navbar *@
+@await Html.PartialAsync("_EmployeeNavbar")
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <!-- Summary Section -->
+    <div class="row gx-4">
+        <!-- Salary Summary -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Salary This Month</h5>
+                    <p class="display-6 fw-bold text-success">$4,500</p>
+                    <p class="text-muted">Net Salary after Deductions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tax Deductions -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Tax Deductions</h5>
+                    <p class="display-6 fw-bold text-danger">-$1,200</p>
+                    <p class="text-muted">Includes income and other taxes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Leave Balance -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Leave Balance</h5>
+                    <p class="display-6 fw-bold text-primary">8 Days</p>
+                    <p class="text-muted">Available leave for this year</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="row gx-4">
+        <!-- Payment History Chart -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Payment History</h5>
+                    <div style="height: 300px; background-color: #f9f9f9;" class="d-flex align-items-center justify-content-center">
+                        <p class="text-muted">[Chart Placeholder]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tax Liabilities Chart -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Tax Liabilities</h5>
+                    <div style="height: 300px; background-color: #f9f9f9;" class="d-flex align-items-center justify-content-center">
+                        <p class="text-muted">[Chart Placeholder]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    .card-title {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .display-6 {
+        font-size: 28px;
+    }
+
+    .btn-dark {
+        background-color: #333;
+        border-color: #333;
+        color: #fff;
+        border-radius: 6px;
+    }
+
+        .btn-dark:hover {
+            background-color: #555;
+            border-color: #555;
+        }
+</style>

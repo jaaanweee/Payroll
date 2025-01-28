@@ -5,5 +5,8 @@ namespace project.Data.Repository
     {
         Task<Users?> LoginAsync(string username, string password);
         Task<bool> AddAsync(Users user);
+        Task CheckEmailPhoneConsistency(int userId);
+        Task<UserLoginModel> GetEmployeeInfo(int userId);
+
     }
 }

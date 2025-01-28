@@ -1,0 +1,18 @@
+﻿@model project.Data.Models.Domain.Role
+
+@{
+    ViewData["Title"] = "Add Role";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="AddRole" method="post">
+    <div class="form-group">
+        <label for="RoleName">Role Name</label>
+        <input type="text" class="form-control" id="RoleName" name="RoleName" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Add Role</button>
+</form>
+<div class="mt-3">
+    <a href="@Url.Action("RoleList", "Role")">Back to User List</a>
+</div>

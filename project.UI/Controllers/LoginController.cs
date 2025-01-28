@@ -22,7 +22,6 @@ namespace project.UI.Controllers
         }
 
 
-        //handle login post
         [HttpPost]
         public async Task<IActionResult> Login(UserLoginModel loginModel)
         {
@@ -31,31 +30,41 @@ namespace project.UI.Controllers
                 return View(loginModel);
             }
 
-
+            // Validate the username and password using the repository
             var user = await _usersRepo.LoginAsync(loginModel.Username, loginModel.Password);
 
             if (user != null && user.Role == loginModel.Role)
             {
-                // Assuming you have a user role property
-                // Redirect based on user role
-                if (user.Role == "Admin")
-                {
-                    return RedirectToAction("DashboardOverview", "Dashboard");
-                }
-                else if (user.Role == "HRManager")
-                {
-                    return RedirectToAction("HRDashboard", "Dashboard");
-                }
-                else if (user.Role == "Employee")
-                {
-                    return RedirectToAction("EmployeeDashboard", "Dashboard");
-                }
+                // Get the UserID based on the username
+                int userId = user.Id;
 
+                // Check if email and phone numbers are consistent between Users and Employees
+               // await _usersRepo.CheckEmailPhoneConsistency(userId);
+
+                // Get the employee information based on the UserID
+                UserLoginModel employee = await _usersRepo.GetEmployeeInfo(userId);
+
+                if (employee != null)
+                {
+                    if (user.Role == "Admin")
+                    {
+                        return RedirectToAction("DashboardOverview", "Dashboard");
+                    }
+                    else if (user.Role == "HRManager")
+                    {
+                        return RedirectToAction("HRDashboard", "Dashboard");
+                    }
+                    else if (user.Role == "Employee")
+                    {
+                        return RedirectToAction("Dash", "Dashboard");
+                    }
+                }
             }
+
             TempData["msg"] = "Invalid credentials, please try again.";
             return View(new UserLoginModel());
-
         }
+
 
 
         // Display Sign Up View

@@ -1,0 +1,36 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/Dashboard/DashboardOverview"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Dashboard Overview" ? "active" : "")" href="/Dashboard/Dash">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Dashboard Overview" ? "active" : "")" href="/Dashboard/Salary">Salary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Payroll Management" ? "active" : "")" href="/Leave/Leave">Leave</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Employee Management" ? "active" : "")" href="/Dashboard/Taxes">Taxes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Reports" ? "active" : "")" href="/Expense/Expense"> Reimbursements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Reports" ? "active" : "")" href="/Dashboard/Payments">Payments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Settings" ? "active" : "")" href="/Dashboard/Alerts">Alerts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Profile" ? "active" : "")" href="/Dashboard/Profile">Profile </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

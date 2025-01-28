@@ -61,6 +61,38 @@ namespace project.UI.Controllers
             ViewData["Title"] = "AuditLogs";
             return View();
         }
+        public IActionResult Dash()
+        {
+            return View();
+        }
+        public IActionResult Salary()
+        {
+            return View();
+        }
+        public IActionResult Leave()
+        {
+            return View();
+        }
+        public IActionResult Taxes()
+        {
+            return View();
+        }
+        public IActionResult Reimbursements()
+        {
+            return View();
+        }
+        public IActionResult Payments()
+        {
+            return View();
+        }
+        public IActionResult Alerts()
+        {
+            return View();
+        }
+        public IActionResult Profile()
+        {
+            return View();
+        }
 
     }
 

@@ -13,5 +13,6 @@ namespace project.Data.Models.Domain
 
         [Required]
         public string Role { get; set; }
+        
     }
 }

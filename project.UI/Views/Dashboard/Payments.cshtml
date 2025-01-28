@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Payment Methods & Schedules";
+}
+@* Include the navbar *@
+@await Html.PartialAsync("_EmployeeNavbar")
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <!-- Payment Methods Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Manage Payment Methods</h5>
+                    <form class="mt-3">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="paymentMethod" class="form-label">Payment Method</label>
+                                <select class="form-select" id="paymentMethod">
+                                    <option value="Direct Deposit">Direct Deposit</option>
+                                    <option value="Check">Check</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="accountDetails" class="form-label">Account Details</label>
+                                <input type="text" class="form-control" id="accountDetails" placeholder="Enter account info">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Save Payment Method</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Schedules Section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Payment Schedules</h5>
+                    <table class="table table-bordered mt-3">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Amount</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-01-30</td>
+                                <td class="text-warning">Pending</td>
+                                <td>$1,500.00</td>
+                                <td><button class="btn btn-link text-info">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-15</td>
+                                <td class="text-success">Paid</td>
+                                <td>$1,500.00</td>
+                                <td><button class="btn btn-link text-info">View Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>2025-01-01</td>
+                                <td class="text-danger">Failed</td>
+                                <td>$1,500.00</td>
+                                <td><button class="btn btn-link text-info">View Details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .form-label {
+        font-weight: bold;
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .text-success {
+        color: #28a745;
+    }
+
+    .text-warning {
+        color: #ffc107;
+    }
+
+    .text-danger {
+        color: #dc3545;
+    }
+
+    .btn-dark {
+        background-color: #333;
+        border-color: #333;
+        color: #fff;
+    }
+
+    .btn-dark:hover {
+        background-color: #555;
+        border-color: #555;
+    }
+</style>

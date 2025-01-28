@@ -11,28 +11,32 @@
         <p class="lead">Manage user roles, compliance settings, and system preferences to keep your system optimized and aligned with organizational needs.</p>
     </div>
 
-    <div class="row">
-        <!-- User Role Management Section -->
-        <div class="col-lg-4 mb-4">
-            <div class="p-4 bg-white shadow-sm rounded">
-                <h4 class="text-dark text-uppercase fw-bold mb-3">User Role Management</h4>
-                <p>Define roles and permissions for users to ensure secure and role-based access.</p>
-                <ul class="list-unstyled">
-                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                        <span>Add User Role</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">Add</button>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                        <span>Edit Permissions</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">Edit</button>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center py-2">
-                        <span>Remove User Role</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">Remove</button>
-                    </li>
-                </ul>
-            </div>
+    <div class="col-lg-4 mb-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+            <h4 class="text-dark text-uppercase fw-bold mb-3">User Role Management</h4>
+            <p>Define roles and permissions for users to ensure secure and role-based access.</p>
+            <ul class="list-unstyled">
+                <!-- Add User Role -->
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <span>Add User Role</span>
+                    <a href="@Url.Action("AddRole", "Role")" class="btn btn-outline-dark btn-sm px-4">Add</a>
+                </li>
+
+                <!-- Edit User Permissions -->
+                <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
+                    <span>Edit Permissions</span>
+                    <a href="@Url.Action("EditRole", "Role")" class="btn btn-outline-dark btn-sm px-4">Edit</a>
+                </li>
+
+                <!-- Remove User Role -->
+                <li class="d-flex justify-content-between align-items-center py-2">
+                    <span>Remove User Role</span>
+                    <a href="@Url.Action("RemoveRole", "Role")" class="btn btn-outline-dark btn-sm px-4">Remove</a>
+                </li>
+            </ul>
         </div>
+    </div>
+
 
         <!-- Compliance Settings Section -->
         <div class="col-lg-4 mb-4">

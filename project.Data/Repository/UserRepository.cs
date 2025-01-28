@@ -100,7 +100,7 @@ namespace project.Data.Repository
             await _sqlDataAccess.SaveData("sp_DeactivateUser", parameters); // Call stored procedure
         }
 
-
+        
 
     }
 }

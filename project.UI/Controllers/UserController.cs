@@ -124,6 +124,8 @@ namespace project.Controllers
             await _userRepository.DeleteUserAsync(id);
             return RedirectToAction("UserManagement"); // Redirect back to User Management page
         }
+       
+
     }
 }
 

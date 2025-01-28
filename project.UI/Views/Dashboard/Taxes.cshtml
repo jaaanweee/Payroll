@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Tax Forms and Compliance";
+}
+@* Include the navbar *@
+@await Html.PartialAsync("_EmployeeNavbar")
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <!-- Tax Forms Section -->
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Download Tax Forms</h5>
+                    <p class="text-muted">Access your tax forms easily by clicking the download links below.</p>
+                    <ul class="list-group mt-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            W-2 Form (2024)
+                            <a href="@Url.Action("DownloadTaxForm", "TaxForms", new { formName = "fw2--2024.pdf" })" class="btn btn-sm btn-dark">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            W-4 Form
+                            <a href="@Url.Action("DownloadTaxForm", "TaxForms", new { formName = "fw4.pdf" })" class="btn btn-sm btn-dark">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            1099 Form
+                            <a href="@Url.Action("DownloadTaxForm", "TaxForms", new { formName = "f1099msc.pdf" })" class="btn btn-sm btn-dark">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tax Calculations Section -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Tax Calculations, Allowances, and Benefits</h5>
+                    <table class="table table-bordered mt-3">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Item</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Federal Tax</td>
+                                <td>$300.00</td>
+                            </tr>
+                            <tr>
+                                <td>State Tax</td>
+                                <td>$100.00</td>
+                            </tr>
+                            <tr>
+                                <td>Social Security</td>
+                                <td>$150.00</td>
+                            </tr>
+                            <tr>
+                                <td>Medicare</td>
+                                <td>$50.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total Deductions</td>
+                                <td class="fw-bold">$600.00</td>
+                            </tr>
+                            <tr>
+                                <td>Allowances</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Taxable Benefits</td>
+                                <td>$200.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    .card-title {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .btn-dark {
+        background-color: #333;
+        border-color: #333;
+        color: #fff;
+    }
+
+        .btn-dark:hover {
+            background-color: #555;
+            border-color: #555;
+        }
+</style>
