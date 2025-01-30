@@ -1,10 +1,144 @@
 ﻿@{
-    ViewData["Title"] = "HR Manager Dashboard";
+    ViewData["Title"] = "Dashboard Overview";
 }
 
+@await Html.PartialAsync("_HRNavbar")
 
+<div class="container-fluid p-5">
+    <div class="text-center mb-5">
+        
+        <p class="lead">An intuitive dashboard to manage employees efficiently.</p>
+    </div>
 
-<div class="container mt-4">
-    <h2>@ViewData["Title"]</h2>
-    @* Page-specific content goes here *@
+    <div class="row g-5">
+        <!-- Employee Overview -->
+        <div class="col-lg-8">
+            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
+                <h4 class="text-dark text-uppercase fw-bold mb-4">Employee Overview</h4>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Salary Band</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover-row">
+                            <td>John Doe</td>
+                            <td>Software Engineer</td>
+                            <td><span class="badge bg-success">Active</span></td>
+                            <td>$80K - $100K</td>
+                            <td><button class="btn btn-outline-dark btn-sm">View</button></td>
+                        </tr>
+                        <tr class="hover-row">
+                            <td>Jane Smith</td>
+                            <td>HR Manager</td>
+                            <td><span class="badge bg-warning">On Leave</span></td>
+                            <td>$70K - $90K</td>
+                            <td><button class="btn btn-outline-dark btn-sm">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Quick Search & Filters -->
+        <div class="col-lg-4">
+            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
+                <h4 class="text-dark text-uppercase fw-bold mb-4">Quick Search</h4>
+                <input type="text" class="form-control mb-4 hover-input" placeholder="Search employee...">
+                <h5 class="fw-bold mb-3">Filters</h5>
+                <select class="form-select mb-3 hover-select">
+                    <option>Status</option>
+                    <option>Active</option>
+                    <option>On Leave</option>
+                </select>
+                <select class="form-select mb-3 hover-select">
+                    <option>Job Role</option>
+                    <option>Software Engineer</option>
+                    <option>HR Manager</option>
+                </select>
+                <button class="btn btn-dark w-100 hover-btn">Apply Filters</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+<style>
+    body {
+        background-color: #f9fafb;
+    }
+
+    .btn-outline-dark {
+        border-color: #343a40;
+        color: #343a40;
+    }
+
+        .btn-outline-dark:hover {
+            background-color: #343a40;
+            color: white;
+            border-color: #343a40;
+        }
+
+    .bg-light {
+        background-color: #f9f9f9 !important;
+    }
+
+    .shadow-lg {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .rounded-3 {
+        border-radius: 12px;
+    }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #343a40;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+    .table-hover tbody tr:hover {
+        background-color: #e9ecef;
+        cursor: pointer;
+    }
+
+    .hover-row:hover {
+        background-color: #f1f1f1;
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+    }
+
+    .hover-btn:hover {
+        background-color: #343a40;
+        color: white;
+        border-color: #343a40;
+    }
+
+    .hover-input:hover, .hover-select:hover {
+        border-color: #6c757d;
+        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+    }
+
+    .hover-btn {
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+        }
+
+   
+</style>

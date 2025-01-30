@@ -10,15 +10,13 @@ namespace project.Data.Models.Domain
     public class Expense
     {
        
-
-       
         public int EmployeeID { get; set; }
 
         [Required(ErrorMessage = "expense Type is required")]
         public string ExpenseType { get; set; }
 
         [Required]
-        public decimal Amount { get; set; }
+        public int Amount { get; set; }
 
         [Required(ErrorMessage = "ExpenseDate is required")]
         [DataType(DataType.Date)]
@@ -26,6 +24,6 @@ namespace project.Data.Models.Domain
         [Required(ErrorMessage = "Reason is required")]
         public string Description { get; set; }
 
-        public string? ReceiptPath { get; set; } // Stores file path of uploaded receipt
+        public string ReceiptFileName { get; set; }
     }
 }

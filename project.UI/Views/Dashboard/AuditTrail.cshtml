@@ -1,0 +1,25 @@
+﻿@* Include the navbar *@
+@await Html.PartialAsync("_HRNavbar")<!-- Audit Trail & Documentation Section -->
+<div class="row gx-4">
+    <!-- Audit Trail -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Audit Trail</h5>
+                <p class="text-muted">Maintain a record of payroll actions for compliance.</p>
+                <a href="#" class="btn btn-dark">View Logs</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Documentation -->
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm border-0 rounded">
+            <div class="card-body text-center">
+                <h5 class="card-title fw-bold">Documentation</h5>
+                <p class="text-muted">Generate and view documentation for auditing.</p>
+                <a href="#" class="btn btn-dark">Generate Report</a>
+            </div>
+        </div>
+    </div>
+</div>

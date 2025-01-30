@@ -27,6 +27,7 @@ namespace project.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Expense(Expense expense, IFormFile receiptFile)
         {
+            ModelState.Remove("ReceiptFileName");
             if (!ModelState.IsValid)
             {
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
@@ -36,32 +37,40 @@ namespace project.UI.Controllers
                 return View(expense);
             }
 
-            // Define the folder path inside wwwroot
-            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "receipts");
-
-            // Check if the folder exists, if not, create it
-            if (!Directory.Exists(uploadsFolder))
+            // Check if a file is uploaded
+            if (receiptFile.FileName != null )
             {
-                Directory.CreateDirectory(uploadsFolder);
-            }
+                // Define the folder path inside wwwroot
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "receipts");
 
-            // Handle file upload
-            if (receiptFile != null && receiptFile.Length > 0)
-            {
+                // Check if the folder exists, if not, create it
+                if (!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+
+                // Generate a unique file name to avoid conflicts
                 var uniqueFileName = $"{Guid.NewGuid()}_{receiptFile.FileName}";
+
+                // Combine folder path and file name
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
+                // Save the file to the specified path
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await receiptFile.CopyToAsync(stream);
                 }
 
-                expense.ReceiptPath = "/receipts/" + uniqueFileName; // Save relative path
+                // Save the file name to the model
+                expense.ReceiptFileName = uniqueFileName;
             }
 
+            // Save expense details
             await _expenseRepository.AddExpenseAsync(expense);
+
             TempData["AlertMessage"] = "Expense claim submitted successfully!";
             return RedirectToAction("Expense");
         }
+
     }
 }

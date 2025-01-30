@@ -93,7 +93,38 @@ namespace project.UI.Controllers
         {
             return View();
         }
-
+        public IActionResult PayrollProcess()
+        {
+            return View();
+        }
+        public IActionResult TaxReports()
+        {
+            return View();
+        }
+        public IActionResult HRReports()
+        {
+            return View();
+        }
+        public IActionResult ProfileManagement()
+        {
+            return View();
+        }
+        public IActionResult PayrollPolicy()
+        {
+            return View();
+        }
+        public IActionResult LeaveManagement()
+        {
+            return View();
+        }
+        public IActionResult SystemSettings()
+        {
+            return View();
+        }
+        public IActionResult AuditTrail()
+        {
+            return View();
+        }
     }
 
 }

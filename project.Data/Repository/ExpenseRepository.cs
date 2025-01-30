@@ -27,7 +27,7 @@ namespace project.Data.Repository
                 Amount = expense.Amount,
                 ExpenseDate = expense.ExpenseDate,
                 Description = expense.Description,
-                ReceiptPath = expense.ReceiptPath
+                ReceiptPath = expense.ReceiptFileName
             };
 
             await _sqlDataAccess.SaveData("AddExpense", parameters);

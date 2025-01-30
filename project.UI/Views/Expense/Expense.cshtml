@@ -42,10 +42,10 @@
                                 <input type="number" class="form-control" asp-for="Amount" id="amount" placeholder="Enter amount">
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="receipt" class="form-label">Upload Receipt</label>
-                                <input type="file" class="form-control" asp-for="ReceiptPath" id="receipt">
-
+                                <label for="receiptFile" class="form-label">Upload Receipt</label>
+                                <input type="file" class="form-control" name="receiptFile" accept=".jpg,.png,.pdf,.jpeg">
                             </div>
+
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Description</label>
@@ -158,3 +158,9 @@
         border-color: #555;
     }
 </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById('expenseDate').value = today;
+    });
+</script>

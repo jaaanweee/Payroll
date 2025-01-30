@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Reports & Analytics";
+}
+
+@await Html.PartialAsync("_HRNavbar")
+
+<div class="container-fluid px-0 mt-5">
+    <h2 class="mb-4 text-center">@ViewData["Title"]</h2>
+
+    <!-- Reports Section -->
+    <div class="row g-4">
+        <!-- Labor Costs Report -->
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Labor Costs Report</h5>
+                    <p class="card-text">Generate a comprehensive report on labor costs, including breakdowns of salaries, benefits, and overtime.</p>
+                    <button class="btn btn-dark w-100">Generate Report</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Salary Distribution Report -->
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Salary Distribution Report</h5>
+                    <p class="card-text">View and analyze salary distribution across different departments, job roles, and seniority levels.</p>
+                    <button class="btn btn-dark w-100">Generate Report</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overtime Analysis Report -->
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Overtime Analysis Report</h5>
+                    <p class="card-text">Generate a detailed report on employee overtime hours, identifying trends and possible concerns.</p>
+                    <button class="btn btn-dark w-100">Generate Report</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Analytics Section -->
+        <div class="col-lg-6 col-md-6 col-12">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Visual Analytics</h5>
+                    <p class="card-text">View visual charts and graphs to help with decision-making, budgeting, and forecasting.</p>
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div> <!-- Placeholder for charts -->
+                    <button class="btn btn-dark w-100 mt-3">View Charts</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+    .card-title {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .btn-dark {
+        background-color: #333;
+        border-color: #333;
+        color: #fff;
+    }
+
+        .btn-dark:hover {
+            background-color: #555;
+            border-color: #555;
+        }
+
+    .row.g-4 {
+        gap: 1.5rem;
+    }
+
+    .col-lg-6, .col-md-6, .col-12 {
+        padding: 0;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+</style>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script>
+    window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            title: {
+                text: "Labor Cost Distribution"
+            },
+            axisY: {
+                title: "Amount in USD"
+            },
+            data: [{
+                type: "pie",
+                dataPoints: [
+                    { label: "Salaries", y: 60 },
+                    { label: "Benefits", y: 25 },
+                    { label: "Overtime", y: 15 }
+                ]
+            }]
+        });
+        chart.render();
+    }
+</script>

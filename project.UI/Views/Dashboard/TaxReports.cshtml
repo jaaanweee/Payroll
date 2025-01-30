@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Compliance and Tax Reports";
+}
+
+@await Html.PartialAsync("_HRNavbar")
+
+<div class="container-fluid p-5">
+    <div class="text-center mb-5">
+       
+        <p class="lead">Generate tax reports quickly and ensure legal compliance with automated reminders.</p>
+    </div>
+
+    <!-- Tax Reports Section -->
+    <div class="row g-4">
+        <!-- Generate Tax Reports -->
+        <div class="col-lg-8">
+            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
+                <h4 class="text-dark text-uppercase fw-bold mb-4">Tax Report Generator</h4>
+                <p class="lead">Easily generate comprehensive tax reports for employees, summarizing withheld taxes and total earnings.</p>
+
+                <!-- Tax Report Form -->
+                <form>
+                    <div class="mb-3">
+                        <label for="reportPeriod" class="form-label">Report Period</label>
+                        <input type="month" class="form-control" id="reportPeriod" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="taxType" class="form-label">Tax Type</label>
+                        <select class="form-select" id="taxType" required>
+                            <option selected>Choose Tax Type</option>
+                            <option value="federal">Federal Tax</option>
+                            <option value="state">State Tax</option>
+                            <option value="socialSecurity">Social Security Tax</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-dark w-100">Generate Report</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tax Filing Deadline Notifications -->
+        <div class="col-lg-4">
+            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
+                <h4 class="text-dark text-uppercase fw-bold mb-4">Tax Filing Deadlines</h4>
+                <p class="lead">Stay ahead with automated reminders for tax filing deadlines to ensure legal compliance.</p>
+
+                <!-- Tax Filing Deadlines List -->
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Federal Tax Filing
+                        <span class="badge bg-danger rounded-pill">Due Soon</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        State Tax Filing
+                        <span class="badge bg-warning rounded-pill">Pending</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Social Security Tax Filing
+                        <span class="badge bg-success rounded-pill">On Time</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compliance Overview Section -->
+    <div class="row g-4">
+        <div class="col-lg-12">
+            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
+                <h4 class="text-dark text-uppercase fw-bold mb-4">Compliance Overview</h4>
+                <p class="lead">Get a quick overview of compliance statuses for different tax categories to ensure all filings are on track.</p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Tax Category</th>
+                            <th>Status</th>
+                            <th>Next Deadline</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Federal Tax</td>
+                            <td><span class="badge bg-danger">Due Soon</span></td>
+                            <td>March 31, 2025</td>
+                            <td><button class="btn btn-outline-dark btn-sm">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>State Tax</td>
+                            <td><span class="badge bg-warning">Pending</span></td>
+                            <td>April 15, 2025</td>
+                            <td><button class="btn btn-outline-dark btn-sm">View Details</button></td>
+                        </tr>
+                        <tr>
+                            <td>Social Security</td>
+                            <td><span class="badge bg-success">On Time</span></td>
+                            <td>Ongoing</td>
+                            <td><button class="btn btn-outline-dark btn-sm">View Details</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f9fafb;
+    }
+    .btn-outline-dark {
+        border-color: #343a40;
+        color: #343a40;
+    }
+    .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: white;
+        border-color: #343a40;
+    }
+    .bg-light {
+        background-color: #f9f9f9 !important;
+    }
+    .shadow-lg {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    .rounded-3 {
+        border-radius: 12px;
+    }
+    .form-control, .form-select {
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    .form-control:focus, .form-select:focus {
+        border-color: #343a40;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 1.5rem;
+    }
+    .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    }
+    .list-group-item {
+        border: none;
+        font-size: 1.1rem;
+    }
+</style>

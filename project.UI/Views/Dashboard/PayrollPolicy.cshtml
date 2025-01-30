@@ -1,0 +1,157 @@
+﻿@{
+    ViewData["Title"] = "Payroll Policies and Settings";
+}
+@* Include the navbar *@
+@await Html.PartialAsync("_HRNavbar")
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+
+    <!-- Payroll Policies Section -->
+    <div class="row gx-4">
+        <!-- Tax Rates Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Tax Rates</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="taxRate" class="form-label">Income Tax Rate (%)</label>
+                            <input type="number" class="form-control" id="taxRate" value="25">
+                        </div>
+                        <div class="mb-3">
+                            <label for="salesTaxRate" class="form-label">Sales Tax Rate (%)</label>
+                            <input type="number" class="form-control" id="salesTaxRate" value="8">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deduction Rules Section -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Deduction Rules</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="deductionRate" class="form-label">Standard Deduction Rate (%)</label>
+                            <input type="number" class="form-control" id="deductionRate" value="5">
+                        </div>
+                        <div class="mb-3">
+                            <label for="otherDeductions" class="form-label">Other Deductions</label>
+                            <input type="number" class="form-control" id="otherDeductions" value="100">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Eligibility Section -->
+    <div class="row gx-4">
+        <div class="col-md-12 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Benefits Eligibility</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="healthInsurance" class="form-label">Health Insurance Eligibility</label>
+                            <select class="form-select" id="healthInsurance">
+                                <option value="Eligible">Eligible</option>
+                                <option value="Not Eligible">Not Eligible</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="retirementPlan" class="form-label">Retirement Plan Eligibility</label>
+                            <select class="form-select" id="retirementPlan">
+                                <option value="Eligible">Eligible</option>
+                                <option value="Not Eligible">Not Eligible</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Schedule Section -->
+    <div class="row gx-4">
+        <div class="col-md-12 mb-4">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Payment Schedules</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="paymentSchedule" class="form-label">Select Payment Schedule</label>
+                            <select class="form-select" id="paymentSchedule">
+                                <option value="Weekly">Weekly</option>
+                                <option value="Bi-Weekly">Bi-Weekly</option>
+                                <option value="Monthly" selected>Monthly</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row gx-4">
+        <div class="col-md-12 mb-4">
+            <button class="btn btn-dark">Save Settings</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .display-6 {
+        font-size: 28px;
+    }
+
+    .btn-dark {
+        background-color: #333;
+        border-color: #333;
+        color: #fff;
+        border-radius: 6px;
+    }
+
+    .btn-dark:hover {
+        background-color: #555;
+        border-color: #555;
+    }
+
+    .form-control:hover {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    .form-select:hover {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    }
+
+    .form-label {
+        color: #555;
+    }
+</style>
