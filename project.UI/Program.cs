@@ -18,6 +18,15 @@ builder.Services.AddTransient<IRoleRepository, RoleRepository>();
 builder.Services.AddTransient<ILeaveRepository, LeaveRepository>();
 builder.Services.AddTransient<IExpenseRepository, ExpenseRepository>();
 
+// ** Add session services **
+builder.Services.AddDistributedMemoryCache(); // Required for session
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 // Ensure the "receipts" directory exists
@@ -38,6 +47,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// ** Enable session before authentication **
+app.UseSession();
 
 app.UseAuthorization();
 

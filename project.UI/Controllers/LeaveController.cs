@@ -23,6 +23,19 @@ namespace project.UI.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Leave(Leaves leave)
         {
+            // Access the UserID from the session
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            // If the UserId is not found, redirect to the login page
+            if (userId == null)
+            {
+                TempData["ErrorMessage"] = "You need to be logged in to submit a leave request.";
+                return RedirectToAction("Login", "Account"); // Adjust to your login route
+            }
+
+            // Set the UserID for the leave object
+            leave.UserID = userId.Value;
+
             if (!ModelState.IsValid)
             {
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))

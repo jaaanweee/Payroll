@@ -42,10 +42,12 @@ namespace project.UI.Controllers
                // await _usersRepo.CheckEmailPhoneConsistency(userId);
 
                 // Get the employee information based on the UserID
-                UserLoginModel employee = await _usersRepo.GetEmployeeInfo(userId);
+                UserLoginModel user1 = await _usersRepo.GetEmployeeInfo(userId);
 
-                if (employee != null)
+                if (user1 != null)
                 {
+                    HttpContext.Session.SetString("Username", user1.Username);
+                    HttpContext.Session.SetInt32("UserId", user1.Id);
                     if (user.Role == "Admin")
                     {
                         return RedirectToAction("DashboardOverview", "Dashboard");
@@ -96,6 +98,13 @@ namespace project.UI.Controllers
             TempData["msg"] = addUserResult ? "Sign up successful!" : "Sign up failed.";
             return RedirectToAction(nameof(Login));
         }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear(); // Clear session data
+            return RedirectToAction("Login", "Login");
+        }
+
     }
 }
     

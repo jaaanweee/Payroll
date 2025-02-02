@@ -26,7 +26,18 @@ namespace project.UI.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Expense(Expense expense, IFormFile receiptFile)
-        {
+        {// Access the UserID from the session
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            // If the UserId is not found, redirect to the login page
+            if (userId == null)
+            {
+                TempData["ErrorMessage"] = "You need to be logged in to submit a expense request.";
+                return RedirectToAction("Login", "Account"); // Adjust to your login route
+            }
+
+            // Set the UserID for the leave object
+            expense.UserID = userId.Value;
             ModelState.Remove("ReceiptFileName");
             if (!ModelState.IsValid)
             {

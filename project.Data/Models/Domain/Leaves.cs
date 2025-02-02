@@ -9,7 +9,7 @@ namespace project.Data.Models.Domain
 {
     public class Leaves
     {
-        public int EmployeeID { get; set; }
+        public int UserID { get; set; }
 
         [Required(ErrorMessage = "Leave Type is required")]
         public string LeaveType { get; set; }

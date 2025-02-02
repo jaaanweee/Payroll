@@ -31,6 +31,20 @@
                     <a class="nav-link @(ViewData["Title"] == "Profile" ? "active" : "")" href="/Dashboard/AuditTrail">AuditTrail </a>
                 </li>
             </ul>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item d-flex align-items-center">
+                    <span class="nav-link text-white">
+                        @TempData["username"]
+                        @{
+                            TempData.Keep("username");
+                        } <!-- Make sure TempData is kept alive after accessing it -->
+                    </span>
+                    <a class="nav-link text-danger ms-2" href="/Login/Logout" title="Logout">
+                        <i class="fa-solid fa-arrow-right-from-bracket" style="color: #cacdd3;"></i> <!-- Font Awesome Icon -->
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

@@ -20,7 +20,7 @@ namespace project.Data.Repository
         {
             var parameters = new
             {
-                EmployeeID = leave.EmployeeID,
+                UserID = leave.UserID,
                 LeaveType = leave.LeaveType,
                 StartDate = leave.StartDate,
                 EndDate = leave.EndDate,

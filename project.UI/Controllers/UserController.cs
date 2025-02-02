@@ -125,7 +125,6 @@ namespace project.Controllers
             return RedirectToAction("UserManagement"); // Redirect back to User Management page
         }
        
-
     }
 }
 

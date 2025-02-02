@@ -21,7 +21,7 @@
                     <h5 class="card-title fw-bold">Leave Requests</h5>
                     <form class="mt-3" method="post" asp-action="Leave" asp-controller="Leave">
                         @* Hidden fields for LeaveID and EmployeeID *@
-                        <input type="hidden" asp-for="EmployeeID" value="@Model.EmployeeID" /> 
+                        <input type="hidden" asp-for="UserID" value="@Model.UserID" /> 
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="leaveType" class="form-label">Leave Type</label>

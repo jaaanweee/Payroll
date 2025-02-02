@@ -22,7 +22,7 @@ namespace project.Data.Repository
         {
             var parameters = new
             {
-                EmployeeID = expense.EmployeeID,
+                UserID = expense.UserID,
                 ExpenseType = expense.ExpenseType,
                 Amount = expense.Amount,
                 ExpenseDate = expense.ExpenseDate,

@@ -10,7 +10,7 @@ namespace project.Data.Models.Domain
     public class Expense
     {
        
-        public int EmployeeID { get; set; }
+        public int UserID { get; set; }
 
         [Required(ErrorMessage = "expense Type is required")]
         public string ExpenseType { get; set; }
