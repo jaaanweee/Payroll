@@ -1,6 +1,7 @@
 ﻿using project.Data.DataAccess;
 using project.Data.Models.Domain;
 using System.Collections.Generic;
+using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
 
 namespace project.Data.Repository
@@ -29,7 +30,7 @@ namespace project.Data.Repository
             await _sqlDataAccess.SaveData("AddUser", parameters);
         }
 
-        public async Task<Users> GetUserByIdAsync(int id)
+        public async Task<Users> GetUserByIdAsync(int? id)
         {
             var parameters = new { Id = id };
             // Assuming you have a stored procedure for fetching a user by Id
@@ -99,8 +100,23 @@ namespace project.Data.Repository
             var parameters = new { Id = id };
             await _sqlDataAccess.SaveData("sp_DeactivateUser", parameters); // Call stored procedure
         }
+       public async Task EmpUpdProfileAsync(Users user1)
+        {
+            var parameters = new
+            {
+                Id = user1.Id,
+                FirstName = user1.FirstName,
+                Email = user1.Email,
+                PhoneNumber = user1.PhoneNumber,
+                Address = user1.Address,
+              
+            };
 
-        
+            // Assuming you have a stored procedure named AddUser
+            await _sqlDataAccess.SaveData("UpdateEP", parameters);
+        }
+
+
 
     }
 }

@@ -1,10 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using project.Data.Models.Domain;
+using project.Data.Repository;
 
 namespace project.UI.Controllers
 {
     public class DashboardController : Controller
     {
+        private readonly IUserRepository _userRepository;
+        public DashboardController(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
         public IActionResult AdminDashboard()
         {
             // Only accessible by users with "Admin" role
@@ -104,12 +111,54 @@ namespace project.UI.Controllers
         {
             return View();
         }
-        public IActionResult Profile()
+        public async Task<IActionResult> Profile()
         {
-            return View();
+            int? userId = HttpContext.Session.GetInt32("UserId");
+            var user =await _userRepository.GetUserByIdAsync(userId); // Fetch from database
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
         }
-        
-            public IActionResult PayrollProcess()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Profile(Users user1)
+         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            // If the UserId is not found, redirect to the login page
+            if (userId == null)
+            {
+                TempData["ErrorMessage"] = "You need to be logged in to submit a leave request.";
+                return RedirectToAction("Login", "Account"); // Adjust to your login route
+            }
+
+            // Set the ID for the  object
+            user1.Id = userId.Value;
+
+            if (!ModelState.IsValid)
+            {
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    Console.WriteLine(error.ErrorMessage); // Or log the error messages
+                }
+            }
+
+            if (ModelState.IsValid)
+            {
+                await _userRepository.EmpUpdProfileAsync(user1);
+                TempData["AlertMessage"] = "Employee updated sucessfully";
+            }
+            else
+            {
+                TempData["AlertMessage"] = "Not updated";
+            }
+            return View(user1);
+        }
+        public IActionResult PayrollProcess()
         {
             return View();
         }
