@@ -11,5 +11,7 @@ namespace project.Data.Repository
     public interface IExpenseRepository
     {
         Task AddExpenseAsync(Expense expense);
+         Task<IEnumerable<Expense>> GetUserExpensesAsync(int userId);
+         Task<IEnumerable<Expense>> GetAllExpensesAsync(int userId);
     }
 }

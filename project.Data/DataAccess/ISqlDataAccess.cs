@@ -10,5 +10,7 @@ namespace project.Data.DataAccess
 
         Task SaveData<T>(string spName,
         T parametres, string connectionId = "conn");
+
+      
     }
 }

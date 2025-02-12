@@ -116,6 +116,42 @@ namespace project.Data.Repository
             await _sqlDataAccess.SaveData("UpdateEP", parameters);
         }
 
+        public async Task SaveSalarySlipAsync(SalarySlip salarySlip)
+        {
+            var parameters = new
+            {
+                Userid = salarySlip.UserId,
+                Name = salarySlip.Name,
+                Designation = salarySlip.Designation,
+                JoiningDate = salarySlip.JoiningDate,
+                BasicSalary = salarySlip.BasicSalary,
+                Allowance = salarySlip.Allowance,
+                Deduction = salarySlip.Deduction,
+                NetSalary = salarySlip.NetSalary,
+                AmountInWords = salarySlip.AmountInWords
+            };
+
+            await _sqlDataAccess.SaveData("sp_SaveSalarySlip", parameters);
+        }
+
+        public async Task<SalarySlip> GetSalarySlipByEmployeeIdAsync(int employeeId)
+        {
+            var parameters = new { EmployeeId = employeeId };
+            var result = await _sqlDataAccess.GetData<SalarySlip, dynamic>("sp_GetSalarySlipByEmployeeId", parameters);
+            return result.FirstOrDefault();
+        }
+
+        public async Task<SalarySlip> GetSalarySlipByIdAsync(int id)
+        {
+            var parameters = new { Id = id };
+
+            // Assuming you have a stored procedure named "GetSalarySlipById"
+            var result = await _sqlDataAccess.GetData<SalarySlip, dynamic>("sp_GetSalarySlipById", parameters);
+
+            return result.FirstOrDefault(); // Return the first matching salary slip or null
+        }
+
+
 
 
     }

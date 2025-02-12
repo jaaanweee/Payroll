@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dapper;
+using Microsoft.Data.SqlClient;
 using project.Data.DataAccess;
 using project.Data.Models.Domain;
 
@@ -32,5 +35,20 @@ namespace project.Data.Repository
 
             await _sqlDataAccess.SaveData("AddExpense", parameters);
         }
+
+
+        public async Task<IEnumerable<Expense>> GetUserExpensesAsync(int userId)
+        {
+            var parameters = new { UserID = userId };
+            return await _sqlDataAccess.GetData<Expense, dynamic>("GetUserExpenses", parameters);
+        }
+
+        public async Task<IEnumerable<Expense>> GetAllExpensesAsync(int id)
+        {
+            return await _sqlDataAccess.GetData<Expense, dynamic>("GetAllExpenses", new { });
+        }
+
     }
+
 }
+

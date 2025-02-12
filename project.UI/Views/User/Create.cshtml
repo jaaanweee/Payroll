@@ -7,6 +7,9 @@
 <h2>Add New User</h2>
 
 <form method="post">
+    <input type="hidden" name="IsActive" value="@Model.IsActive" />
+    <input type="hidden" name="FirstName" value="@Model.FirstName" />
+    <input type="hidden" name="Address" value="@Model.Address" />
     <div class="form-group">
         <label for="Username">Username</label>
         <input type="text" class="form-control" id="Username" name="Username" required />

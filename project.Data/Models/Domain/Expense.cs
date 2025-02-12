@@ -12,8 +12,10 @@ namespace project.Data.Models.Domain
        
         public int UserID { get; set; }
 
+        public int ExpenseID { get; set; }
+
         [Required(ErrorMessage = "expense Type is required")]
-        public string ExpenseType { get; set; }
+        public string? ExpenseType { get; set; }
 
         [Required]
         public int Amount { get; set; }
@@ -22,8 +24,8 @@ namespace project.Data.Models.Domain
         [DataType(DataType.Date)]
         public DateTime ExpenseDate { get; set; }
         [Required(ErrorMessage = "Reason is required")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
-        public string ReceiptFileName { get; set; }
+        public string? ReceiptFileName { get; set; }
     }
 }

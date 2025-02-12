@@ -1,0 +1,95 @@
+﻿@model project.Data.Models.Domain.SalarySlip
+
+@{
+    ViewData["Title"] = "Salary Slip Processing";
+}
+
+<h2>Salary Slip Processing</h2>
+
+<form id="salaryForm">
+    <div class="form-group">
+        <label for="employeeId">Employee ID:</label>
+        <input type="text" class="form-control" id="employeeId" name="employeeId" value="@Model.Id" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="name">Employee Name:</label>
+        <input type="text" class="form-control" id="name" name="name" value="@Model.Name" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="designation">Designation:</label>
+        <input type="text" class="form-control" id="designation" name="designation" value="@Model.Designation" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="joiningDate">Date of Joining:</label>
+        <input type="date" class="form-control" id="joiningDate" name="joiningDate" value="@Model.JoiningDate.ToString("yyyy-MM-dd")" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="basicSalary">Basic Salary:</label>
+        <input type="number" class="form-control" id="basicSalary" name="basicSalary"  value="@Model.BasicSalary" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="allowance">Allowance:</label>
+        <input type="number" class="form-control" id="allowance" name="allowance"  value="@Model.Allowance" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="deduction">Deduction:</label>
+        <input type="number" class="form-control" id="deduction" name="deduction"  value="@Model.Deduction" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="netSalary">Net Salary:</label>
+        <input type="text" class="form-control" id="netSalary" value="@Model.NetSalary" readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="amountInWords">Amount in Words:</label>
+        <input type="text" class="form-control" id="amountInWords" value="@Model.AmountInWords" readonly />
+    </div>
+
+    <button type="button" class="btn btn-primary" onclick="downloadPdf()">Generate Slip</button>
+
+    <script>
+        function downloadPdf() {
+            var id = @Model.Id; // Ensure Model.Id is the correct property for your salary slip
+            window.location.href = '/User/DownloadSlip/' + id;
+        }
+    </script>
+</form>
+
+@* <script>
+    function calculateNetSalary() {
+        let basicSalary = parseFloat(document.getElementById('basicSalary').value) || 0;
+        let allowance = parseFloat(document.getElementById('allowance').value) || 0;
+        let deduction = parseFloat(document.getElementById('deduction').value) || 0;
+
+        let netSalary = basicSalary + allowance - deduction;
+        document.getElementById('netSalary').value = netSalary.toFixed(2);
+
+        // Convert number to words
+        document.getElementById('amountInWords').value = numberToWords(netSalary);
+    }
+
+    function numberToWords(num) {
+        if (num === 0) return "Zero";
+
+        const a = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+        const b = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+
+        function convertToWords(n) {
+            if (n < 20) return a[n];
+            if (n < 100) return b[Math.floor(n / 10)] + (n % 10 ? " " + a[n % 10] : "");
+            if (n < 1000) return a[Math.floor(n / 100)] + " Hundred" + (n % 100 ? " and " + convertToWords(n % 100) : "");
+            if (n < 1000000) return convertToWords(Math.floor(n / 1000)) + " Thousand" + (n % 1000 ? " " + convertToWords(n % 1000) : "");
+            if (n < 1000000000) return convertToWords(Math.floor(n / 1000000)) + " Million" + (n % 1000000 ? " " + convertToWords(n % 1000000) : "");
+            return convertToWords(Math.floor(n / 1000000000)) + " Billion" + (n % 1000000000 ? " " + convertToWords(n % 1000000000) : "");
+        }
+
+        return convertToWords(num);
+    }
+</script> *@

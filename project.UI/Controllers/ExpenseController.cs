@@ -83,5 +83,11 @@ namespace project.UI.Controllers
             return RedirectToAction("Expense");
         }
 
+        public async Task<IActionResult> ExpenseList(int id)
+        {
+            var expenses = await _expenseRepository.GetAllExpensesAsync(id);
+            return View(expenses);
+        }
+
     }
 }

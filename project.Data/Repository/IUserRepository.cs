@@ -8,7 +8,7 @@ namespace project.Data.Repository
     public interface IUserRepository
     {
         Task AddUserAsync(Users user);              // Renamed to AddUserAsync for async pattern
-        Task<Users> GetUserByIdAsync(int id);        // Renamed to include Async and added `Async` suffix
+        Task<Users> GetUserByIdAsync(int? id);        // Renamed to include Async and added `Async` suffix
         Task<IEnumerable<Users>> GetAllUsersAsync();
         // Renamed to GetAllUsersAsync for async pattern
         Task<Users> GetUserByUsernameAsync(string username);
@@ -21,10 +21,13 @@ namespace project.Data.Repository
         Task<IEnumerable<Users>> SearchActivatedUsersAsync(string searchQuery);
 
         Task DeactivateUserAsync(int id);
+        Task EmpUpdProfileAsync(Users user1);
 
 
 
-
+        Task SaveSalarySlipAsync(SalarySlip salarySlip); 
+        Task<SalarySlip> GetSalarySlipByEmployeeIdAsync(int employeeId);
+        Task<SalarySlip> GetSalarySlipByIdAsync(int id);
 
     }
 }
