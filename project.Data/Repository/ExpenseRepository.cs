@@ -45,8 +45,18 @@ namespace project.Data.Repository
 
         public async Task<IEnumerable<Expense>> GetAllExpensesAsync(int id)
         {
-            return await _sqlDataAccess.GetData<Expense, dynamic>("GetAllExpenses", new { });
+            var parameters = new { Id = id };
+
+            return await _sqlDataAccess.GetData<Expense, dynamic>("GetAllExpenses", parameters);
         }
+
+
+        public async Task<IEnumerable<Expense>> GetExpensesByUserIdAsync(int userId)
+        {
+            var parameters = new { UserID = userId };
+            return await _sqlDataAccess.GetData<Expense, dynamic>("GetUserExpenses", parameters);
+        }
+
 
     }
 

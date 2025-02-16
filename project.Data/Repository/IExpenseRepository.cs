@@ -13,5 +13,8 @@ namespace project.Data.Repository
         Task AddExpenseAsync(Expense expense);
          Task<IEnumerable<Expense>> GetUserExpensesAsync(int userId);
          Task<IEnumerable<Expense>> GetAllExpensesAsync(int userId);
+
+        Task<IEnumerable<Expense>> GetExpensesByUserIdAsync(int userId);
+
     }
 }

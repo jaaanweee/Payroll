@@ -1,28 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using iText.IO.Font.Constants;
+using iText.Kernel.Font;
+using iText.Kernel.Pdf;
+using iText.Layout.Element;
+using Microsoft.AspNetCore.Mvc;
 using project.Data.Models.Domain;
 using project.Data.Repository;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using System.Xml.Linq;
-using iText.Kernel.Pdf;
-using iText.Layout;
-using iText.Layout.Element;
-using System.IO;
-using System.Globalization;
-using iText.IO.Font.Constants;
-using iText.Kernel.Font;
+using System.Reflection.Metadata;
 
-namespace project.Controllers
+namespace project.UI.Controllers
 {
-    public class UserController : Controller
+    public class EmployeeManagementController : Controller
     {
         private readonly IUserRepository _userRepository;
 
-        public UserController(IUserRepository userRepository)
+        public EmployeeManagementController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
-
         // GET: User/Create
         public async Task<IActionResult> Create()
         {
@@ -36,12 +30,12 @@ namespace project.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Users user)
         {
-         
-                // You might want to hash the password before saving it
-                await _userRepository.AddUserAsync(user); // This will call the stored procedure to insert a new user
-                TempData["msg"] = "User added successfully!";
-                return RedirectToAction("Index"); // Redirect to user list or another page after successful addition
-            
+
+            // You might want to hash the password before saving it
+            await _userRepository.AddUserAsync(user); // This will call the stored procedure to insert a new user
+            TempData["msg"] = "User added successfully!";
+            return RedirectToAction("Index"); // Redirect to user list or another page after successful addition
+
             return View(user);
         }
         public async Task<IActionResult> Index()
@@ -87,13 +81,13 @@ namespace project.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(Users user)
         {
-          
-                // Update the user in the database
-                await _userRepository.UpdateUserAsync(user);
 
-                // Redirect to the list of users or a success page
-                return RedirectToAction("EditUserPage");
-            
+            // Update the user in the database
+            await _userRepository.UpdateUserAsync(user);
+
+            // Redirect to the list of users or a success page
+            return RedirectToAction("EditUserPage");
+
 
             // If validation fails, return to the Edit view with the user's data
             return View("Edit", user);
@@ -136,7 +130,7 @@ namespace project.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult>  Processing(string searchQuery)
+        public async Task<IActionResult> Processing(string searchQuery)
         {
             IEnumerable<Users> users;
             if (string.IsNullOrEmpty(searchQuery))
@@ -224,48 +218,7 @@ namespace project.Controllers
             return View(salarySlip); // Pass salary slip data to view
         }
 
-        public async Task<IActionResult> DownloadSlip(int id)
-        {
-            var salarySlip = await _userRepository.GetSalarySlipByIdAsync(id);
-
-            if (salarySlip == null)
-            {
-                return NotFound();
-            }
-            using (var memoryStream = new MemoryStream())
-            {
-                PdfWriter writer = new PdfWriter(memoryStream);
-                PdfDocument pdf = new PdfDocument(writer);
-                Document document = new Document(pdf);
-
-                // Load bold font
-                PdfFont boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
-                PdfFont normalFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA);
-
-                // Add Title with Bold
-                document.Add(new Paragraph("Salary Slip").SetFont(boldFont).SetFontSize(16));
-
-                // Add Salary Details
-                document.Add(new Paragraph($"Employee Name: {salarySlip.Name}").SetFont(normalFont));
-                document.Add(new Paragraph($"Designation: {salarySlip.Designation}").SetFont(normalFont));
-                document.Add(new Paragraph($"Joining Date: {salarySlip.JoiningDate:yyyy-MM-dd}").SetFont(normalFont));
-                document.Add(new Paragraph($"Basic Salary: {salarySlip.BasicSalary:C}").SetFont(normalFont));
-                document.Add(new Paragraph($"Allowance: {salarySlip.Allowance:C}").SetFont(normalFont));
-                document.Add(new Paragraph($"Deduction: {salarySlip.Deduction:C}").SetFont(normalFont));
-                document.Add(new Paragraph($"Net Salary: {salarySlip.NetSalary:C}").SetFont(boldFont)); // Make net salary bold
-                document.Add(new Paragraph($"Amount in Words: {salarySlip.AmountInWords}").SetFont(normalFont));
-                document.Add(new Paragraph($"Generated On: {salarySlip.CreatedAt:yyyy-MM-dd}").SetFont(normalFont));
-
-                document.Close();
-
-                return File(memoryStream.ToArray(), "application/pdf", "SalarySlip.pdf");
-            }
-
-        }
-
+     
 
     }
 }
-
-    
- 

@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using static iText.StyledXmlParser.Jsoup.Select.Evaluator;
 
 namespace project.UI.Controllers
 {
@@ -18,10 +19,36 @@ namespace project.UI.Controllers
             _expenseRepository = expenseRepository;
         }
 
-        public IActionResult Expense()
+        //public IActionResult Expense()
+        //{
+        //    return View(new Expense()); // Load the form
+        //}
+
+
+        public async Task<IActionResult> Expense()
         {
-            return View(new Expense()); // Load the form
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (userId == null)
+            {
+                TempData["ErrorMessage"] = "You need to be logged in to submit an expense request.";
+                return RedirectToAction("Login", "Account");
+            }
+
+            var userExpenses = (await _expenseRepository.GetExpensesByUserIdAsync(userId.Value)).ToList();
+
+            var model = new ExpenseViewModel
+            {
+                Expense = new Expense(),
+                UserExpenses = userExpenses
+            };
+
+            return View(model);
         }
+
+
+
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -81,6 +108,8 @@ namespace project.UI.Controllers
 
             TempData["AlertMessage"] = "Expense claim submitted successfully!";
             return RedirectToAction("Expense");
+
+      
         }
 
         public async Task<IActionResult> ExpenseList(int id)

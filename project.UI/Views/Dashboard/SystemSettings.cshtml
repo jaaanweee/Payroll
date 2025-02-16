@@ -6,42 +6,87 @@
 @await Html.PartialAsync("_HRNavbar")
 
 <div class="container mt-5">
-    <h2 class="mb-4">@ViewData["Title"]</h2>
+    <h2 class="mb-4">Payroll Calculation</h2>
 
-    <!-- System Settings Section -->
-    <div class="row gx-4">
-        <!-- Manage Permissions -->
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm border-0 rounded">
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Manage Permissions</h5>
-                    <p class="text-muted">Configure user roles and permissions.</p>
-                    <a href="#" class="btn btn-dark">Manage</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Security Protocols -->
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm border-0 rounded">
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Security Protocols</h5>
-                    <p class="text-muted">Update password policies and MFA settings.</p>
-                    <a href="#" class="btn btn-dark">Update</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Activity Logs Section -->
-    <div class="row gx-4">
-        <div class="col-md-12 mb-4">
+    <div class="row mb-4">
+        <div class="col-md-6">
             <div class="card shadow-sm border-0 rounded">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Activity Logs</h5>
-                    <p class="text-muted">Track changes to payroll data and monitor system security.</p>
-                    <div style="height: 300px; background-color: #f9f9f9;" class="d-flex align-items-center justify-content-center">
-                        <p class="text-muted">[Logs Placeholder]</p>
+                    <h5 class="card-title fw-bold text-center">Rate & Earning</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Gross Rate</th>
+                                    <th>Basic @("70%")</th>
+                                    <th>HRA @("30%")</th>
+                                     <th>Gross Earning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15000</td>
+                                    <td>12000</td>
+                                    <td>3000</td>
+                                    <td>15000</td>
+                                </tr>
+                                <tr>
+                                    <td>40000</td>
+                                    <td>32000</td>
+                                    <td>8000</td>
+                                    <td>40000</td>
+                                </tr>
+                                <tr>
+                                    <td>20000</td>
+                                    <td>16000</td>
+                                    <td>4000</td>
+                                    <td>20000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0 rounded">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center">Deduction & Net Salary</h5>
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>PF</th>
+                                    <th>ESIC</th>
+                                    <th>P. Tax</th>
+                                    <th>Total Deduction</th>
+                                    <th>Net Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1440</td>
+                                    <td>113</td>
+                                    <td>200</td>
+                                    <td>1753</td>
+                                    <td>13247</td>
+                                </tr>
+                                <tr>
+                                    <td>1800</td>
+                                    <td>---</td>
+                                    <td>200</td>
+                                    <td>2000</td>
+                                    <td>38000</td>
+                                </tr>
+                                <tr>
+                                    <td>1800</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                    <td>2150</td>
+                                    <td>17850</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -66,20 +111,20 @@
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
-    .card-title {
-        font-size: 18px;
-        color: #333;
+    .table {
+        background-color: #fff;
     }
 
-    .btn-dark {
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+    .table-dark {
         background-color: #333;
-        border-color: #333;
         color: #fff;
-        border-radius: 6px;
     }
 
-    .btn-dark:hover {
-        background-color: #555;
-        border-color: #555;
+    .table-hover tbody tr:hover {
+        background-color: #f1f1f1;
     }
 </style>

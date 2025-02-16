@@ -151,6 +151,14 @@ namespace project.Data.Repository
             return result.FirstOrDefault(); // Return the first matching salary slip or null
         }
 
+        public async Task<IEnumerable<Users>> GetEmployeesAsync()
+        {
+            var result = await _sqlDataAccess.GetData<Users, dynamic>(
+                "sp_GetAllEmployees", new { });
+
+            return result;
+        }
+
 
 
 

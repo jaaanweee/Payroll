@@ -28,6 +28,7 @@ namespace project.Data.Repository
         Task SaveSalarySlipAsync(SalarySlip salarySlip); 
         Task<SalarySlip> GetSalarySlipByEmployeeIdAsync(int employeeId);
         Task<SalarySlip> GetSalarySlipByIdAsync(int id);
+        Task<IEnumerable<Users>> GetEmployeesAsync();
 
     }
 }

@@ -27,5 +27,7 @@ namespace project.Data.Models.Domain
         public string? Description { get; set; }
 
         public string? ReceiptFileName { get; set; }
+        public string Status { get; set; }
+
     }
 }

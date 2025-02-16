@@ -7,11 +7,11 @@ namespace project.UI.Controllers
     public class DashboardController : Controller
     {
         private readonly IUserRepository _userRepository;
+
         public DashboardController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
-
         public IActionResult AdminDashboard()
         {
             // Only accessible by users with "Admin" role
@@ -182,7 +182,7 @@ namespace project.UI.Controllers
         {
             return View();
         }
-        public IActionResult SystemSettings()
+        public IActionResult SystemSettings()               
         {
             return View();
         }
@@ -190,6 +190,38 @@ namespace project.UI.Controllers
         {
             return View();
         }
+        //public async Task<IActionResult> AddSalary()
+        //{
+        //    // Fetch employees with role 'Employee'
+        //    var employees = await _userRepository.GetEmployeesAsync();
+
+        //    // Fetch all salaries
+        //    var salaries = await _salaryRepository.GetAllSalariesAsync();
+
+        //    ViewBag.Employees = employees; // Pass employees to the view
+        //    return View(salaries); // Pass salaries to the view
+        //}
+
+        //[HttpPost]
+        //public async Task<IActionResult> AddSalary(Salary salary)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        await _salaryRepository.AddSalaryAsync(salary);
+        //        TempData["SuccessMessage"] = "Salary added successfully!";
+        //        return RedirectToAction("AddSalary");
+        //    }
+
+        //    // If model state is invalid, reload the employee list and salaries
+        //    ViewBag.Employees = await _userRepository.GetEmployeesAsync();
+        //    var salaries = await _salaryRepository.GetAllSalariesAsync();
+        //    return View(salaries);
+        //}
+        public async Task<IActionResult> PayrollCalculation()
+        {
+
+        }
+
     }
 
 }

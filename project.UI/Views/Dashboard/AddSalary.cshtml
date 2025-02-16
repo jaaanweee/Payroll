@@ -1,0 +1,74 @@
+﻿@* @model IEnumerable<project.Data.Models.Domain.Salary>
+
+@{
+    ViewData["Title"] = "Add Salary";
+}
+
+<h2>Add Salary</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label for="UserId">Select Employee:</label>
+        <select id="UserId" name="UserId" class="form-control" required>
+            <option value="">-- Select Employee --</option>
+            @foreach (var emp in ViewBag.Employees)
+            {
+                <option value="@emp.Id">@emp.Username</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="BasicSalary">Basic Salary:</label>
+        <input type="number" id="BasicSalary" name="BasicSalary" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="AllowanceAmount">Allowance:</label>
+        <input type="number" id="AllowanceAmount" name="AllowanceAmount" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="DeductionAmount">Deductions:</label>
+        <input type="number" id="DeductionAmount" name="DeductionAmount" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Salary</button>
+</form>
+
+<hr />
+
+<h2>Salary List</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Salary ID</th>
+            <th>Employee ID</th>
+            <th>Basic Salary</th>
+            <th>Allowance</th>
+            <th>Deductions</th>
+            <th>Net Salary</th>
+            <th>Payroll Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var salary in Model)
+        {
+            <tr>
+                <td>@salary.SalaryID</td>
+                <td>@salary.UserID</td>
+                <td>@salary.BasicSalary</td>
+                <td>@salary.AllowanceAmount</td>
+                <td>@salary.DeductionAmount</td>
+                <td>@(salary.BasicSalary + salary.AllowanceAmount - salary.DeductionAmount)</td>
+                <td>@salary.PayrollDate.ToString("yyyy-MM-dd")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+ *@
