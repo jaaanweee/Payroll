@@ -4,44 +4,172 @@
     ViewData["Title"] = "Add New User";
 }
 
-<h2>Add New User</h2>
+<style>
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-<form method="post">
-    <input type="hidden" name="IsActive" value="@Model.IsActive" />
-    <input type="hidden" name="FirstName" value="@Model.FirstName" />
-    <input type="hidden" name="Address" value="@Model.Address" />
-    <div class="form-group">
-        <label for="Username">Username</label>
-        <input type="text" class="form-control" id="Username" name="Username" required />
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #F6F6F6;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    /* Form Container */
+    .form-container {
+        width: 100%;
+        max-width: 500px;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .user-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #000;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+    /* Button Styling */
+    .btn-primary {
+        background: #222;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+        .btn-primary:hover {
+            background: #444;
+        }
+
+    /* Back Link */
+    .back-link {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+        .back-link a {
+            color: #444;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+            .back-link a:hover {
+                color: #000;
+            }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        body {
+            padding: 15px;
+        }
+
+        .form-container {
+            width: 100%;
+        }
+    }
+</style>
+
+<!-- Main Layout -->
+<div class="container">
+    <div class="form-container">
+        <h2 class="page-title">Add New User</h2>
+
+        <form method="post" class="user-form">
+            <input type="hidden" name="IsActive" value="@Model.IsActive" />
+            <input type="hidden" name="FirstName" value="@Model.FirstName" />
+            <input type="hidden" name="Address" value="@Model.Address" />
+
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" name="Username" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="PhoneNumber">Phone Number</label>
+                <input type="tel" id="PhoneNumber" name="PhoneNumber" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Role">Role</label>
+                <select id="Role" name="Role">
+                    <option value="Admin">Admin</option>
+                    <option value="HRManager">HR Manager</option>
+                    <option value="Employee">Employee</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary">Add User</button>
+        </form>
+
+        <div class="back-link">
+            <a href="@Url.Action("Index", "User")">Back to User List</a>
+        </div>
     </div>
-
-    <div class="form-group">
-        <label for="Password">Password</label>
-        <input type="password" class="form-control" id="Password" name="Password" required />
-    </div>
-
-    <div class="form-group">
-        <label for="Email">Email</label>
-        <input type="email" class="form-control" id="Email" name="Email" required />
-    </div>
-
-    <div class="form-group">
-        <label for="PhoneNumber">Phone Number</label>
-        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" required />
-    </div>
-
-    <div class="form-group">
-        <label for="Role">Role</label>
-        <select class="form-control" id="Role" name="Role">
-            <option value="Admin">Admin</option>
-            <option value="HRManager">HR Manager</option>
-            <option value="Employee">Employee</option>
-        </select>
-    </div>
-
-    <button type="submit" class="btn btn-primary mt-3">Add User</button>
-</form>
-
-<div class="mt-3">
-    <a href="@Url.Action("Index", "User")">Back to User List</a>
 </div>

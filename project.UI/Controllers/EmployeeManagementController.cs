@@ -40,7 +40,7 @@ namespace project.UI.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var users = await _userRepository.GetAllUsersAsync(); // Fetch all users
+            var users = await _userRepository.GetAUsersAsync(); // Fetch all users
             return View(users); // Return the Index view with the list of users
         }
         public async Task<IActionResult> UserManagement()

@@ -3,6 +3,7 @@ using project.Data.Models.Domain;
 using System.Collections.Generic;
 using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
+using BCrypt.Net;
 
 namespace project.Data.Repository
 {
@@ -41,9 +42,16 @@ namespace project.Data.Repository
         public async Task<IEnumerable<Users>> GetAllUsersAsync()
         {
             // Assuming you have a stored procedure to get all users
+            var result = await _sqlDataAccess.GetData<Users, dynamic>("GetAllUser", new { });
+            return result;
+        }
+        public async Task<IEnumerable<Users>> GetAUsersAsync()
+        {
+            // Assuming you have a stored procedure to get all users
             var result = await _sqlDataAccess.GetData<Users, dynamic>("GetAllUsers", new { });
             return result;
         }
+
         public async Task<Users> GetUserByUsernameAsync(string username)
         {
             var parameters = new { Username = username };
@@ -159,7 +167,36 @@ namespace project.Data.Repository
             return result;
         }
 
+        public async Task<IEnumerable<Salary>> GetAllSalariesAsync()
+        {
+            var result = await _sqlDataAccess.GetData<Salary, dynamic>("sp_GetAllSalaries", new { });
+            return result;
+        }
+        public async Task<bool> UpdatePasswordAsync(int userId, string currentPassword, string newPassword)
+        {
+            var user = await GetUserByIdAsync(userId);
+            if (user == null) return false; // ❌ User not found
 
+            // ✅ Check if the current password matches the hashed password in DB
+            if (!BCrypt.Net.BCrypt.Verify(currentPassword, user.Password))
+            {
+                return false; // ❌ Password is incorrect
+            }
+
+            // ✅ Hash the new password before storing
+            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(newPassword);
+
+            var parameters = new
+            {
+                UserId = userId,
+                NewPassword = hashedPassword // ✅ Store the hashed password
+            };
+
+            // ✅ Use SaveData since it's an UPDATE operation
+            await _sqlDataAccess.SaveData("sp_UpdatePassword", parameters);
+
+            return true; // ✅ Password updated successfully
+        }
 
 
     }

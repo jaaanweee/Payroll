@@ -1,33 +1,145 @@
 ﻿@model project.Data.Models.Domain.Users
 
-<h1>Edit User</h1>
+@{
+    ViewData["Title"] = "Edit User";
+}
 
-<form method="post" action="@Url.Action("Update", "User")">
-    @Html.AntiForgeryToken()
-    <input type="hidden" name="Id" value="@Model.Id" />
-    <input type="hidden" name="Password" value="@Model.Password" />
-    <input type="hidden" name="PhoneNumber" value="@Model.PhoneNumber" />
-    <input type="hidden" name="IsActive" value="@Model.IsActive" />
-    <input type="hidden" name="FirstName" value="@Model.FirstName" />
-    <input type="hidden" name="Address" value="@Model.Address" />
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #F6F6F6;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 20px;
+    }
 
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
 
-    <div class="mb-3">
-        <label for="Username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="Username" name="Username" value="@Model.Username" />
+    .form-container {
+        width: 100%;
+        max-width: 600px;
+        background: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .page-title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    input:focus,
+    select:focus {
+        outline: none;
+        border-color: #000;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary {
+        background: #222;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn-primary:hover {
+        background: #444;
+    }
+
+    .back-link {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .back-link a {
+        color: #444;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .back-link a:hover {
+        color: #000;
+    }
+
+    @@media (max-width: 768px) {
+        body {
+            padding: 20px;
+        }
+
+        .form-container {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="form-container">
+        <h2 class="page-title">Edit User</h2>
+        <form method="post" action="@Url.Action("Update", "User")">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="Id" value="@Model.Id" />
+            <input type="hidden" name="Password" value="@Model.Password" />
+            <input type="hidden" name="PhoneNumber" value="@Model.PhoneNumber" />
+            <input type="hidden" name="IsActive" value="@Model.IsActive" />
+            <input type="hidden" name="FirstName" value="@Model.FirstName" />
+            <input type="hidden" name="Address" value="@Model.Address" />
+
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" name="Username" value="@Model.Username" required />
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" value="@Model.Email" required />
+            </div>
+            <div class="form-group">
+                <label for="Role">Role</label>
+                <select id="Role" name="Role">
+                    <option value="Admin">Admin</option>
+                    <option value="HRManager">HR Manager</option>
+                    <option value="Employee">Employee</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-primary">Update</button>
+        </form>
+       
     </div>
-    <div class="mb-3">
-        <label for="Email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" />
-    </div>
-    <div class="mb-3">
-        <label for="Role" class="form-label">Role</label>
-        <select class="form-select" id="Role" name="Role" asp-for="Role">
-            <option value="Admin" selected="@Model.Role == " Admin"">Admin</option>
-            <option value="HR Manager" selected="@Model.Role == " HR Manager"">HR Manager</option>
-            <option value="Employee" selected="@Model.Role == " Employee"">Employee</option>
-        </select>
-
-    </div>
-    <button type="submit" class="btn btn-primary">Update</button>
-</form>
+</div>

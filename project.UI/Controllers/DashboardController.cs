@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using project.Data.Models.Domain;
 using project.Data.Repository;
+using System.Text;
+using System.Security.Cryptography;
+
+
 
 namespace project.UI.Controllers
 {
@@ -21,7 +25,6 @@ namespace project.UI.Controllers
 
         public IActionResult HRDashboard()
         {
-
             string? username = HttpContext.Session.GetString("Username");
             int? id = HttpContext.Session.GetInt32("UserId");
             TempData["username"] = username;
@@ -31,7 +34,6 @@ namespace project.UI.Controllers
 
         public IActionResult EmployeeDashboard()
         {
-            // Only accessible by users with "Employee" role
             return View();
         }
         public IActionResult DashboardOverview()
@@ -88,7 +90,7 @@ namespace project.UI.Controllers
             return View();
         }
         public IActionResult Salary()
-        {
+        {   
             return View();
         }
         public IActionResult Leave()
@@ -190,36 +192,61 @@ namespace project.UI.Controllers
         {
             return View();
         }
-        //public async Task<IActionResult> AddSalary()
-        //{
-        //    // Fetch employees with role 'Employee'
-        //    var employees = await _userRepository.GetEmployeesAsync();
-
-        //    // Fetch all salaries
-        //    var salaries = await _salaryRepository.GetAllSalariesAsync();
-
-        //    ViewBag.Employees = employees; // Pass employees to the view
-        //    return View(salaries); // Pass salaries to the view
-        //}
-
-        //[HttpPost]
-        //public async Task<IActionResult> AddSalary(Salary salary)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        await _salaryRepository.AddSalaryAsync(salary);
-        //        TempData["SuccessMessage"] = "Salary added successfully!";
-        //        return RedirectToAction("AddSalary");
-        //    }
-
-        //    // If model state is invalid, reload the employee list and salaries
-        //    ViewBag.Employees = await _userRepository.GetEmployeesAsync();
-        //    var salaries = await _salaryRepository.GetAllSalariesAsync();
-        //    return View(salaries);
-        //}
-        public async Task<IActionResult> PayrollCalculation()
+        public async Task<IActionResult> ViewSalary()
+        { 
+            var salaries = await _userRepository.GetAllSalariesAsync();
+            return View(salaries);
+        }
+        public IActionResult Create()
         {
+            ViewData["Title"] = "User Management";
+            return View();
+        }
+        public IActionResult PayrollCalculation()
+        {
+            ViewData["Title"] = "Payroll Calculation";
+            return View();
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdatePassword(string currentPassword, string newPassword, string confirmPassword)
+        {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (userId == null)
+                return RedirectToAction("Login", "Account");
+
+            if (newPassword != confirmPassword)
+            {
+                TempData["ErrorMessage"] = "New passwords do not match.";
+                return RedirectToAction("Profile");
+            }
+
+            // Hash passwords before checking (optional if hashing is implemented)
+            string hashedCurrentPassword = HashPassword(currentPassword);
+            string hashedNewPassword = HashPassword(newPassword);
+
+            bool success = await _userRepository.UpdatePasswordAsync(userId.Value, hashedCurrentPassword, hashedNewPassword);
+
+            if (success)
+            {
+                TempData["SuccessMessage"] = "Password updated successfully.";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Current password is incorrect.";
+            }
+
+            return RedirectToAction("Profile");
+        }
+
+        // Password Hashing Function
+        private string HashPassword(string password)
+        {
+            using var sha256 = SHA256.Create();
+            byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
+            return Convert.ToBase64String(bytes);
         }
 
     }

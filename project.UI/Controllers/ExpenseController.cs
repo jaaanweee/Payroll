@@ -76,7 +76,7 @@ namespace project.UI.Controllers
             }
 
             // Check if a file is uploaded
-            if (receiptFile.FileName != null )
+            if (receiptFile.FileName != null)
             {
                 // Define the folder path inside wwwroot
                 var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "receipts");
@@ -109,8 +109,9 @@ namespace project.UI.Controllers
             TempData["AlertMessage"] = "Expense claim submitted successfully!";
             return RedirectToAction("Expense");
 
-      
+
         }
+
 
         public async Task<IActionResult> ExpenseList(int id)
         {

@@ -3,62 +3,56 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="container d-flex justify-content-center align-items-center min-vh-100" style="padding: 20px;">
+    <div class="card shadow-lg border-0 p-5 rounded-4 w-100" style="max-width: 600px; background: #F9F8F6; margin: 20px; transition: transform 0.3s ease-in-out;">
+        <div class="card-body">
+            <h3 class="text-center mb-4" style="color: #212121; font-weight: 700;">Create an Account</h3>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h3 class="text-center mb-4">Create an Account</h3>
+            @if (TempData["msg"] != null)
+            {
+                <div class="alert alert-info text-center rounded-3" style="font-size: 0.9rem;">@TempData["msg"]</div>
+            }
 
-                    @if (TempData["msg"] != null)
-                    {
-                        <div class="alert alert-info text-center">@TempData["msg"]</div>
-                    }
-
-                    <form asp-action="SignUp" method="post" id="signupForm" autocomplete="off">
-                        <div class="form-group mb-3">
-                            <label asp-for="Role" class="form-label">Select Role</label>
-                            <select asp-for="Role" class="form-control">
-                                <option value="HRManager">HR Manager</option>
-                                <option value="Employee">Employee</option>
-                            </select>
-                            <span asp-validation-for="Role" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label asp-for="Username" class="form-label"></label>
-                            <input asp-for="Username" class="form-control" placeholder="Choose a username" autocomplete="off" />
-                            <span asp-validation-for="Username" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label asp-for="Password" class="form-label"></label>
-                            <input asp-for="Password" class="form-control" placeholder="Choose a password" autocomplete="off" />
-                            <span asp-validation-for="Password" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label asp-for="Email" class="form-label"></label>
-                            <input asp-for="Email" class="form-control" placeholder="Your email address" autocomplete="off" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
-                        </div>
-
-                        <div class="form-group mb-3">
-                            <label asp-for="PhoneNumber" class="form-label"></label>
-                            <input asp-for="PhoneNumber" class="form-control" placeholder="Your phone number" autocomplete="off" />
-                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-                        </div>
-
-                        
-
-                        <button type="submit" class="btn btn-success w-100">Sign Up</button>
-                    </form>
-
-                    <div class="text-center mt-3">
-                        <small>Already have an account? <a asp-action="Login">Login</a></small>
-                    </div>
+            <form asp-action="SignUp" method="post" id="signupForm" autocomplete="off">
+                <div class="form-group mb-3">
+                    <label asp-for="Role" class="form-label" style="color: #666; font-weight: 500;">Select Role</label>
+                    <select asp-for="Role" class="form-control shadow-sm rounded-3 border-0" style="background: #fff; padding: 12px; cursor: pointer; color: #999;">
+                        <option selected disabled style="color: #999;">Select your role</option>
+                        <option value="HRManager" class="dropdown-option" style="background: #fff; color: #212121;">HR Manager</option>
+                        <option value="Employee" class="dropdown-option" style="background: #fff; color: #212121;">Employee</option>
+                    </select>
+                    <span asp-validation-for="Role" class="text-danger"></span>
                 </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Username" class="form-label" style="color: #666; font-weight: 500;">Username</label>
+                    <input asp-for="Username" class="form-control shadow-sm rounded-3 border-0" placeholder="Choose a username" style="background: #fff; padding: 12px; color: #212121;" autocomplete="off" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Password" class="form-label" style="color: #666; font-weight: 500;">Password</label>
+                    <input asp-for="Password" type="password" class="form-control shadow-sm rounded-3 border-0" placeholder="Choose a password" style="background: #fff; padding: 12px; color: #212121;" autocomplete="off" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Email" class="form-label" style="color: #666; font-weight: 500;">Email</label>
+                    <input asp-for="Email" class="form-control shadow-sm rounded-3 border-0" placeholder="Your email address" style="background: #fff; padding: 12px; color: #212121;" autocomplete="off" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="PhoneNumber" class="form-label" style="color: #666; font-weight: 500;">Phone Number</label>
+                    <input asp-for="PhoneNumber" class="form-control shadow-sm rounded-3 border-0" placeholder="Your phone number" style="background: #fff; padding: 12px; color: #212121;" autocomplete="off" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn w-100 shadow-sm rounded-3" style="background: #212121; color: #fff; font-weight: 600; padding: 12px;">Sign Up</button>
+            </form>
+
+            <div class="text-center mt-3">
+                <small style="color: #666;">Already have an account? <a asp-action="Login" style="color: #212121; font-weight: 600;">Login</a></small>
             </div>
         </div>
     </div>
@@ -67,14 +61,35 @@
 @section Scripts {
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // Clear input fields manually
-            document.querySelectorAll('input').forEach(function (input) {
-                input.value = '';
-            });
+            document.querySelectorAll('input').forEach(input => input.value = '');
+            document.querySelector('select').selectedIndex = 0;
+        });
 
-            // Clear the select (role) dropdown value
-            document.querySelector('select').selectedIndex = -1; // Reset to first option (Admin)
+        document.querySelector('.card').addEventListener('mouseover', function () {
+            this.style.transform = 'scale(1.03)';
+        });
+
+        document.querySelector('.card').addEventListener('mouseout', function () {
+            this.style.transform = 'scale(1)';
+        });
+
+        document.querySelector('.role-dropdown').addEventListener('change', function () {
+            this.style.color = '#212121';
         });
     </script>
+   
+
+    <style>
+        .role-dropdown option {
+            background: #fff !important;
+            color: #212121 !important;
+        }
+
+            .role-dropdown option:hover, .role-dropdown option:focus {
+                background: #F5F5F5 !important;
+                color: #212121 !important;
+            }
+    </style>
+
     <partial name="_ValidationScriptsPartial" />
 }

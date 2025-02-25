@@ -37,6 +37,14 @@ namespace project.Data.Repository
             }
         }
 
+       
+
+
+
+
+
+
+        
         // Verify user credentials during login
         public async Task<Users?> LoginAsync(string username, string password)
         {
@@ -49,6 +57,11 @@ namespace project.Data.Repository
 
             return results.FirstOrDefault();
         }
+
+        
+
+
+
 
         // Check if email and phone numbers are consistent between Users and Employees
         public async Task CheckEmailPhoneConsistency(int userId)

@@ -11,7 +11,6 @@ namespace project.Data.Models.Domain
     {
        
         public int UserID { get; set; }
-
         public int ExpenseID { get; set; }
 
         [Required(ErrorMessage = "expense Type is required")]
