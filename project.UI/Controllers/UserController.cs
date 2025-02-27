@@ -1,16 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using project.Data.Models.Domain;
-using project.Data.Repository;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using System.Xml.Linq;
+﻿using iText.IO.Font.Constants;
+using iText.Kernel.Font;
 using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
-using System.IO;
-using System.Globalization;
-using iText.IO.Font.Constants;
-using iText.Kernel.Font;
+using Microsoft.AspNetCore.Mvc;
+using project.Data.Models.Domain;
+using project.Data.Repository;
 
 namespace project.Controllers
 {
@@ -36,12 +31,12 @@ namespace project.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Users user)
         {
-         
-                // You might want to hash the password before saving it
-                await _userRepository.AddUserAsync(user); // This will call the stored procedure to insert a new user
-                TempData["msg"] = "User added successfully!";
-                return RedirectToAction("Index"); // Redirect to user list or another page after successful addition
-            
+
+            // You might want to hash the password before saving it
+            await _userRepository.AddUserAsync(user); // This will call the stored procedure to insert a new user
+            TempData["msg"] = "User added successfully!";
+            return RedirectToAction("Index"); // Redirect to user list or another page after successful addition
+
             return View(user);
         }
         public async Task<IActionResult> Index()
@@ -87,13 +82,13 @@ namespace project.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Update(Users user)
         {
-          
-                // Update the user in the database
-                await _userRepository.UpdateUserAsync(user);
 
-                // Redirect to the list of users or a success page
-                return RedirectToAction("EditUserPage");
-            
+            // Update the user in the database
+            await _userRepository.UpdateUserAsync(user);
+
+            // Redirect to the list of users or a success page
+            return RedirectToAction("EditUserPage");
+
 
             // If validation fails, return to the Edit view with the user's data
             return View("Edit", user);
@@ -113,7 +108,7 @@ namespace project.Controllers
             else
             {
                 // Perform the search using the stored procedure or method, but only for activated users
-                users = await _userRepository.SearchActivatedUsersAsync(searchQuery);
+                users = await _userRepository.SearchUsersAsync(searchQuery);
             }
 
             return View(users); // Pass the activated users to the DeactivateUserPage view
@@ -136,7 +131,7 @@ namespace project.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult>  Processing(string searchQuery)
+        public async Task<IActionResult> Processing(string searchQuery)
         {
             IEnumerable<Users> users;
             if (string.IsNullOrEmpty(searchQuery))
@@ -267,5 +262,5 @@ namespace project.Controllers
     }
 }
 
-    
- 
+
+

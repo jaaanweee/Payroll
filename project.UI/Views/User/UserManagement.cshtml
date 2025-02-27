@@ -11,12 +11,12 @@
 <div class="container mt-5">
     <div class="row align-items-center">
         <div class="col-md-6">
-            <h1 class="fw-bold">Manage System Users</h1>
-            <p class="lead">Add, edit, deactivate users, and assign roles with ease.</p>
+            <h1 class="fw-bold text-dark">Manage System Users</h1>
+            <p class="lead text-secondary">Add, edit, deactivate users, and assign roles with ease.</p>
             <div class="d-flex gap-3">
-                <a href="@Url.Action("Create", "User")" class="btn btn-dark">Add User</a>
-                <a href="@Url.Action("EditUserPage", "User")" class="btn btn-outline-dark">Edit User</a>
-                <a href="@Url.Action("DeactivateUserPage","User")" class="btn btn-outline-dark">Deactivate User</a>
+                <a href="@Url.Action("Create", "User")" class="btn btn-outline-dark rounded-pill px-4 py-2 shadow-sm hover-effect">Add User</a>
+                <a href="@Url.Action("EditUserPage", "User")" class="btn btn-outline-dark rounded-pill px-4 py-2 shadow-sm hover-effect">Edit User</a>
+                <a href="@Url.Action("DeactivateUserPage","User")" class="btn btn-outline-dark rounded-pill px-4 py-2 shadow-sm hover-effect">Deactivate User</a>
             </div>
         </div>
     </div>
@@ -24,25 +24,24 @@
 
 @* Role Management Section *@
 <div class="container mt-5">
-    <h3 class="fw-bold mb-3">Assign User Roles</h3>
-    <p>Define user roles to ensure proper access and permissions.</p>
+    <h3 class="fw-bold text-dark mb-3">Assign User Roles</h3>
+    <p class="text-secondary">Define user roles to ensure proper access and permissions.</p>
     <div class="d-flex gap-3">
-        <a href="#" class="btn btn-outline-dark">Admin</a>
-        <a href="#" class="btn btn-outline-dark">HR Manager</a>
-        <a href="#" class="btn btn-outline-dark">Employee</a>
+        <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 shadow-sm hover-effect">Admin</a>
+        <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 shadow-sm hover-effect">HR Manager</a>
+        <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 shadow-sm hover-effect">Employee</a>
     </div>
 </div>
 
 @* User List Section *@
 <div class="container mt-5">
-    <h3 class="fw-bold mb-3">User List</h3>
-    <table class="table table-bordered table-hover">
-        <thead class="table-light">
+    <h3 class="fw-bold text-dark mb-3">User List</h3>
+    <table class="table table-borderless shadow-lg rounded-3 overflow-hidden">
+        <thead class="bg-dark text-white">
             <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Role</th>
-                
+                <th class="py-3">Name</th>
+                <th class="py-3">Email</th>
+                <th class="py-3">Role</th>
             </tr>
         </thead>
         <tbody>
@@ -50,21 +49,73 @@
             {
                 foreach (var user in Model)
                 {
-                    <tr>
-                        <td>@user.Username</td>
-                        <td>@user.Email</td>
-                        <td>@user.Role</td>
-
-                       
+                    <tr class="border-bottom hover-bg-light">
+                        <td class="py-3">@user.Username</td>
+                        <td class="py-3">@user.Email</td>
+                        <td class="py-3">@user.Role</td>
                     </tr>
                 }
             }
             else
             {
                 <tr>
-                    <td colspan="5" class="text-center">No users found.</td>
+                    <td colspan="3" class="text-center py-4 text-muted">No users found.</td>
                 </tr>
             }
         </tbody>
     </table>
 </div>
+
+<style>
+    body 
+    {
+        background: linear-gradient(180deg, #f9f9f9, #e3e3e3);
+        font-family: "Inter", sans-serif;
+    }
+    .btn {
+        transition: all 0.3s ease-in-out;
+        font-weight: bold;
+    }
+
+    .btn-dark {
+        background: #3e2723;
+        color: white;
+        border: none;
+    }
+
+        .btn-dark:hover {
+            background: #5d4037;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(61, 39, 35, 0.3);
+        }
+
+    .btn-outline-dark {
+        border: 2px solid #3e2723;
+        color: #3e2723;
+    }
+
+        .btn-outline-dark:hover {
+            background: #5d4037;
+            border-color: #5d4037;
+            color: white;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(61, 39, 35, 0.3);
+        }
+
+    .hover-bg-light:hover {
+        background: #d7ccc8 !important;
+    }
+
+    .table thead {
+        font-weight: bold;
+    }
+
+    .shadow-lg {
+        box-shadow: 0 10px 30px rgba(61, 39, 35, 0.2) !important;
+    }
+
+    .shadow-sm {
+        box-shadow: 0 4px 10px rgba(61, 39, 35, 0.15) !important;
+    }
+</style>

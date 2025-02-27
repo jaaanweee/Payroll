@@ -17,6 +17,7 @@ builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IRoleRepository, RoleRepository>();
 builder.Services.AddTransient<ILeaveRepository, LeaveRepository>();
 builder.Services.AddTransient<IExpenseRepository, ExpenseRepository>();
+builder.Services.AddTransient<IPayrollRepository, PayrollRepository>();
 
 // ** Add session services **
 builder.Services.AddDistributedMemoryCache(); // Required for session

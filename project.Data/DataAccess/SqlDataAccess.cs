@@ -34,5 +34,11 @@ namespace project.Data.DataAccess
 
         }
 
+        public async Task<int> ExecuteAsync(string spName, object parameters, string connectionId = "conn")
+        {
+            using IDbConnection connection = new SqlConnection(_config.GetConnectionString(connectionId));
+            return await connection.ExecuteAsync(spName, parameters, commandType: CommandType.StoredProcedure);
+        }
+
     }
 }
