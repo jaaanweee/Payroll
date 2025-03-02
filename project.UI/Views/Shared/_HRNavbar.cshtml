@@ -21,11 +21,17 @@
                 <li class="nav-item">
                     <a class="nav-link @(ViewData["Title"] == "Settings" ? "active" : "")" href="/Dashboard/SystemSettings">SystemSettings</a>
                 </li>
-                <li class="nav-item">
+              @*   <li class="nav-item">
                     <a class="nav-link @(ViewData["Title"] == "Salary" ? "active" : "")" href="/Dashboard/ViewSalary">Salary</a>
-                </li>
+                </li> *@
                 <li class="nav-item">
                     <a class="nav-link @(ViewData["Title"] == "Payroll Calculation" ? "active" : "")" href="/Payroll/PayrollCalculation">Payroll Calculation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "UserLoginHistory" ? "active" : "")" href="/Login/UserLoginHistory">User LoginHistory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link @(ViewData["Title"] == "Leave Requests" ? "active" : "")" href="/Leave/Index">Leave Approval</a>
                 </li>
             </ul>
 

@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Identity.Client;
+﻿using Microsoft.AspNetCore.Mvc;
 using project.Data.Models.Domain;
 using project.Data.Repository;
 
@@ -8,7 +6,6 @@ namespace project.UI.Controllers
 {
     public class LoginController : Controller
     {
-
         private readonly ILoginRepository _usersRepo;
         public LoginController(ILoginRepository usersRepo)
         {
@@ -37,17 +34,14 @@ namespace project.UI.Controllers
             {
                 // Get the UserID based on the username
                 int userId = user.Id;
-
-                // Check if email and phone numbers are consistent between Users and Employees
-               // await _usersRepo.CheckEmailPhoneConsistency(userId);
-
-                // Get the employee information based on the UserID
+                await _usersRepo.LogUserLoginAsync(userId);
                 UserLoginModel user1 = await _usersRepo.GetEmployeeInfo(userId);
 
                 if (user1 != null)
                 {
                     HttpContext.Session.SetString("Username", user1.Username);
                     HttpContext.Session.SetInt32("UserId", user1.Id);
+
                     if (user.Role == "Admin")
                     {
                         return RedirectToAction("DashboardOverview", "Dashboard");
@@ -101,106 +95,118 @@ namespace project.UI.Controllers
 
         public IActionResult Logout()
         {
+            int? userId = HttpContext.Session.GetInt32("UserId");
+
+            if (userId.HasValue)
+            {
+                _usersRepo.LogUserLogoutAsync(userId.Value).Wait(); // Log logout time
+            }
             HttpContext.Session.Clear(); // Clear session data
             return RedirectToAction("Login", "Login");
         }
+        [HttpGet]
+        public async Task<IActionResult> UserLoginHistory()
+        {
+            var history = await _usersRepo.GetUserLoginHistoryAsync();
+            return View(history);
+        }
 
     }
 }
-    
-       /* public IActionResult ForgotPassword()
-        {
-            return View(new ForgotPasswordViewModel());
-        }
 
-        [HttpPost]
-        public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+/* public IActionResult ForgotPassword()
+ {
+     return View(new ForgotPasswordViewModel());
+ }
 
-            // Find user by username or email
-            var user = await _usersRepo.GetUserByUsernameOrEmailAsync(model.UsernameOrEmail);
-            if (user == null)
-            {
-                ModelState.AddModelError("", "User not found.");
-                return View(model);
-            }
+ [HttpPost]
+ public async Task<IActionResult> ForgotPassword(ForgotPasswordViewModel model)
+ {
+     if (!ModelState.IsValid)
+     {
+         return View(model);
+     }
 
-            // Generate a verification code
-            var verificationCode = new Random().Next(100000, 999999).ToString();
-            TempData["ForgotPasswordVerificationCode"] = verificationCode;
-            TempData["ForgotPasswordUsername"] = user.Username;
+     // Find user by username or email
+     var user = await _usersRepo.GetUserByUsernameOrEmailAsync(model.UsernameOrEmail);
+     if (user == null)
+     {
+         ModelState.AddModelError("", "User not found.");
+         return View(model);
+     }
 
-            // Send verification code via email or SMS
-            if (model.SendByEmail)
-            {
-                await _emailService.SendVerificationCodeAsync(user.Email, verificationCode);
-            }
-            else
-            {
-                await _smsService.SendVerificationCodeAsync(user.PhoneNumber, verificationCode);
-            }
+     // Generate a verification code
+     var verificationCode = new Random().Next(100000, 999999).ToString();
+     TempData["ForgotPasswordVerificationCode"] = verificationCode;
+     TempData["ForgotPasswordUsername"] = user.Username;
 
-            return RedirectToAction("VerifyForgotPasswordCode");
-        }
+     // Send verification code via email or SMS
+     if (model.SendByEmail)
+     {
+         await _emailService.SendVerificationCodeAsync(user.Email, verificationCode);
+     }
+     else
+     {
+         await _smsService.SendVerificationCodeAsync(user.PhoneNumber, verificationCode);
+     }
 
-        public IActionResult VerifyForgotPasswordCode()
-        {
-            return View(new VerifyCodeViewModel());
-        }
+     return RedirectToAction("VerifyForgotPasswordCode");
+ }
 
-        [HttpPost]
-        public IActionResult VerifyForgotPasswordCode(VerifyCodeViewModel model)
-        {
-            var verificationCode = TempData["ForgotPasswordVerificationCode"] as string;
-            var username = TempData["ForgotPasswordUsername"] as string;
+ public IActionResult VerifyForgotPasswordCode()
+ {
+     return View(new VerifyCodeViewModel());
+ }
 
-            if (model.Code == verificationCode)
-            {
-                TempData.Remove("ForgotPasswordVerificationCode");
-                TempData.Remove("ForgotPasswordUsername");
-                return RedirectToAction("ResetPassword", new { username });
-            }
+ [HttpPost]
+ public IActionResult VerifyForgotPasswordCode(VerifyCodeViewModel model)
+ {
+     var verificationCode = TempData["ForgotPasswordVerificationCode"] as string;
+     var username = TempData["ForgotPasswordUsername"] as string;
 
-            ModelState.AddModelError("", "Invalid verification code.");
-            return View(model);
-        }
+     if (model.Code == verificationCode)
+     {
+         TempData.Remove("ForgotPasswordVerificationCode");
+         TempData.Remove("ForgotPasswordUsername");
+         return RedirectToAction("ResetPassword", new { username });
+     }
 
-        public IActionResult ResetPassword(string username)
-        {
-            var model = new ResetPasswordViewModel { Username = username };
-            return View(model);
-        }
+     ModelState.AddModelError("", "Invalid verification code.");
+     return View(model);
+ }
 
-        [HttpPost]
-        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+ public IActionResult ResetPassword(string username)
+ {
+     var model = new ResetPasswordViewModel { Username = username };
+     return View(model);
+ }
 
-            var user = await _usersRepo.GetUserByUsernameAsync(model.Username);
-            if (user != null)
-            {
-                user.Password = model.NewPassword; // Hash the password in production
-                await _usersRepo.UpdateUserAsync(user);
-                TempData["msg"] = "Password has been reset successfully.";
-                return RedirectToAction("Login");
-            }
+ [HttpPost]
+ public async Task<IActionResult> ResetPassword(ResetPasswordViewModel model)
+ {
+     if (!ModelState.IsValid)
+     {
+         return View(model);
+     }
 
-            ModelState.AddModelError("", "User not found.");
-            return View(model);
-        }
+     var user = await _usersRepo.GetUserByUsernameAsync(model.Username);
+     if (user != null)
+     {
+         user.Password = model.NewPassword; // Hash the password in production
+         await _usersRepo.UpdateUserAsync(user);
+         TempData["msg"] = "Password has been reset successfully.";
+         return RedirectToAction("Login");
+     }
 
-    }
+     ModelState.AddModelError("", "User not found.");
+     return View(model);
+ }
+
+}
 
 }
 */
-       
+
 
 
 /*

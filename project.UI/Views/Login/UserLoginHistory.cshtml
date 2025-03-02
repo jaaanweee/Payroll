@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "UserLoginHistory";
+}
+@model List<UserLoginHistoryViewModel>
+
+<h2>User Login History</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Login Time</th>
+            <th>Logout Time</th>
+            <th>Working Hours</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model)
+        {
+            <tr>
+                <td>@record.Username</td>
+                <td>@record.LoginTime</td>
+                <td>@record.LogoutTime</td>
+                <td>@(record.WorkingMinutes.HasValue ? (record.WorkingMinutes.Value / 60).ToString("0.##") + " hrs" : "N/A")</td>
+            </tr>
+        }
+    </tbody>
+</table>

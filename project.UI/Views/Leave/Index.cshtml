@@ -1,0 +1,47 @@
+﻿@model IEnumerable<LeaveViewModel>
+
+@{
+    ViewData["Title"] = "Leave Requests";
+}
+
+<h2>Leave Requests</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Leave Type</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Reason</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var leave in Model)
+        {
+            <tr>
+                <td>@leave.Username</td>
+                <td>@leave.LeaveType</td>
+                <td>@leave.StartDate.ToShortDateString()</td>
+                <td>@leave.EndDate.ToShortDateString()</td>
+                <td>@leave.Reason</td>
+                <td>@(leave.Status == 1 ? "Pending" : leave.Status == 2 ? "Approved" : "Rejected")</td>
+                <td>
+                    @if (leave.Status == 1)
+                    {
+                        <form asp-action="ApproveLeave" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@leave.LeaveID" />
+                            <button type="submit" class="btn btn-success">Approve</button>
+                        </form>
+                        <form asp-action="RejectLeave" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@leave.LeaveID" />
+                            <button type="submit" class="btn btn-danger">Reject</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

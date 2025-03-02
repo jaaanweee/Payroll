@@ -10,5 +10,10 @@ namespace project.Data.Repository
     public interface ILeaveRepository
     {
         Task AddLeaveAsync(Leaves leave);
+        Task<IEnumerable<LeaveViewModel>> GetAllLeavesAsync();
+        Task UpdateLeaveStatusAsync(int leaveId, int status);
+        Task<IEnumerable<LeaveViewModel>> GetLeavesByUserIdAsync(int userId);
+
     }
+
 }

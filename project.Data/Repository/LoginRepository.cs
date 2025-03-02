@@ -1,8 +1,5 @@
 ﻿using project.Data.DataAccess;
 using project.Data.Models.Domain;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace project.Data.Repository
 {
     public class LoginRepository : ILoginRepository
@@ -37,14 +34,6 @@ namespace project.Data.Repository
             }
         }
 
-       
-
-
-
-
-
-
-        
         // Verify user credentials during login
         public async Task<Users?> LoginAsync(string username, string password)
         {
@@ -58,8 +47,23 @@ namespace project.Data.Repository
             return results.FirstOrDefault();
         }
 
-        
+        public async Task<IEnumerable<UserLoginHistoryViewModel>> GetUserLoginHistoryAsync()
+        {
+            var result = await _db.GetData<UserLoginHistoryViewModel, dynamic>("sp_GetUserLoginHistory", new { });
+            return result;
+        }
 
+        public async Task LogUserLoginAsync(int userId)
+        {
+            await _db.SaveData("LogUserLogin", new { UserId = userId });
+        }
+        public async Task LogUserLogoutAsync(int userId)
+        {
+            await _db.SaveData("LogUserLogout", new
+            {
+                UserID = userId
+            });
+        }
 
 
 
