@@ -9,6 +9,8 @@ namespace project.Data.Models.Domain
     public class PayrollCalculationModel
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
+        public string?  Username { get; set; }
         public decimal BasicSalary { get; set; }
         public decimal Allowance { get; set; }
         public decimal Bonus { get; set; }

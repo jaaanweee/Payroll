@@ -1,9 +1,5 @@
-﻿using iText.IO.Font.Constants;
-using iText.Kernel.Font;
-using iText.Kernel.Pdf;
-using iText.Layout;
-using iText.Layout.Element;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using project.Data.Models.Domain;
 using project.Data.Repository;
 
@@ -18,9 +14,17 @@ namespace project.Controllers
             _context = context;
         }
         [HttpGet]
-        public IActionResult PayrollCalculation()
+        public async Task<IActionResult>  PayrollCalculation()
         {
             ViewData["Title"] = "Payroll Calculation";
+            var users = await _context.GetAllUsersForDropdownAsync(); // Fetch users from repository
+            //ViewBag.Users = new SelectList(users, "Id", "Username"); // Populate dropdown
+            ViewBag.Users = users.Select(u => new SelectListItem
+            {
+                Value = u.Username, // 🔹 Ensure this is Username
+                Text = u.Username
+            }).ToList();
+
             return View();
         }
 

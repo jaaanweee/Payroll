@@ -10,5 +10,7 @@ namespace project.Data.Repository
     public interface IPayrollRepository
     {
         Task<int> AddPayrollAsync(PayrollCalculationModel model);
+        Task<IEnumerable<Users>> GetAllUsersForDropdownAsync();
+
     }
 }

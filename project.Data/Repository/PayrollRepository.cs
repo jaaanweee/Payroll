@@ -35,13 +35,20 @@ namespace project.Data.Repository
                 model.LoanRepayments,
                 model.LeaveDeductions,
                 model.TotalDeductions,
-                model.NetSalary
+                model.NetSalary,
+                model.Username
             };
 
             return await _sqlDataAccess.ExecuteAsync("usp_AddPayrollCalculation", parameters);
         }
 
+        public async Task<IEnumerable<Users>> GetAllUsersForDropdownAsync()
+        {
+            var result = await _sqlDataAccess.GetData<Users, dynamic>("sp_GetAllUsersForDropdown", new { });
+            return result;
+        }
 
     }
 
 }
+    
