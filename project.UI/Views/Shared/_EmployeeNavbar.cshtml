@@ -1,4 +1,25 @@
-﻿<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+﻿<style>
+    .navbar {
+        border-radius: 10px; /* Makes the navbar rounded */
+    }
+
+    .navbar-nav .nav-link {
+        color: gray; /* Default color for all navbar links */
+        font-weight: normal;
+        transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    }
+
+        .navbar-nav .nav-link.active {
+            color: white !important; /* Highlight active navbar link */
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: white !important; /* White text on hover */
+        }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="/Dashboard/DashboardOverview"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -11,7 +32,7 @@
                     <a class="nav-link @(ViewData["Title"] == "Dashboard Overview" ? "active" : "")" href="/Dashboard/Dash">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @(ViewData["Title"] == "Dashboard Overview" ? "active" : "")" href="/Dashboard/Salary">Salary</a>
+                    <a class="nav-link @(ViewData["Title"] == "Salary" ? "active" : "")" href="/Dashboard/Salary">Salary</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link @(ViewData["Title"] == "Payroll Management" ? "active" : "")" href="/Leave/Leave">Leave</a>
@@ -20,13 +41,13 @@
                     <a class="nav-link @(ViewData["Title"] == "Employee Management" ? "active" : "")" href="/Dashboard/Taxes">Taxes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @(ViewData["Title"] == "Reports" ? "active" : "")" href="/Expense/Expense">Reimbursements</a>
+                    <a class="nav-link @(ViewData["Title"] == "Expense" ? "active" : "")" href="/Expense/Expense">Reimbursements</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @(ViewData["Title"] == "Reports" ? "active" : "")" href="/Dashboard/Payments">Payments</a>
+                    <a class="nav-link @(ViewData["Title"] == "Payments" ? "active" : "")" href="/Dashboard/Payments">Payments</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @(ViewData["Title"] == "Settings" ? "active" : "")" href="/Dashboard/Alerts">Alerts</a>
+                    <a class="nav-link @(ViewData["Title"] == "Alerts" ? "active" : "")" href="/Dashboard/Alerts">Alerts</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link @(ViewData["Title"] == "Profile" ? "active" : "")" href="/Dashboard/Profile">Profile</a>
@@ -49,8 +70,6 @@
                     </a>
                 </li>
             </ul>
-
-
         </div>
     </div>
 </nav>

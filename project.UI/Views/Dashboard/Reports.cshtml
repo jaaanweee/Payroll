@@ -1,114 +1,163 @@
-﻿@{
-    ViewData["Title"] = "Reports & Analytics"; // Set the page title
+﻿@model project.Data.Models.Domain.PayrollCalculationModel
+@{
+    ViewData["Title"] = "Payroll Calculation";
 }
 
-@* Include the navbar *@
 @await Html.PartialAsync("_AdminNavbar")
-
-<div class="container-fluid p-4 bg-light">
-    <div class="text-center mb-4">
-        <h1 class="display-5 fw-bold">@ViewData["Title"]</h1>
-        <p class="lead">Manage and generate reports with ease. View prebuilt reports or create custom ones tailored to your needs.</p>
-    </div>
-
-    <div class="row">
-        <!-- Prebuilt Reports Section -->
-        <div class="col-lg-6 mb-4">
-            <div class="p-4 bg-white shadow-sm rounded">
-                <h4 class="text-dark text-uppercase fw-bold mb-3">Prebuilt Reports</h4>
-                <ul class="list-unstyled">
-                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                        <span>Labor Costs Report</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                        <span>Salary Distribution Report</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center py-2 border-bottom">
-                        <span>Overtime Analysis Report</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center py-2">
-                        <span>Department-Wise Salary Analysis</span>
-                        <button class="btn btn-outline-dark btn-sm px-4">View</button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Custom Reports Section -->
-        <div class="col-lg-6 mb-4">
-            <div class="p-4 bg-white shadow-sm rounded">
-                <h4 class="text-dark text-uppercase fw-bold mb-3">Custom Reports</h4>
-                <form>
-                    <div class="mb-3">
-                        <label for="reportName" class="form-label">Report Name</label>
-                        <input type="text" class="form-control" id="reportName" placeholder="Enter report name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="reportFilters" class="form-label">Filters</label>
-                        <textarea class="form-control" id="reportFilters" rows="3" placeholder="Define filters for the report"></textarea>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <button type="submit" class="btn btn-dark px-4">Generate Report</button>
-                        <div>
-                            <button type="button" class="btn btn-outline-dark me-2 px-3">Export to PDF</button>
-                            <button type="button" class="btn btn-outline-dark px-3">Export to Excel</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <style>
     body {
-        background-color: #f8f9fa;
+        background-color: #f6f4ef;
+        font-family: 'Poppins', sans-serif;
     }
 
-    .btn-outline-dark:hover {
-        background-color: #343a40;
-        color: white;
+    h2 {
+        color: #333;
+        font-weight: 600;
     }
 
-    .bg-light {
-        background-color: #f4f4f4 !important;
+    form {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     }
 
-    .shadow-sm {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .form-group label {
+        font-weight: 500;
+        color: #555;
     }
-
-    .rounded {
-        border-radius: 16px;
-    }
-
-    .list-unstyled li {
-        transition: background-color 0.3s ease;
-    }
-
-        .list-unstyled li:hover {
-            background-color: #f0f0f0;
-        }
 
     .form-control {
-        border: 2px solid #ddd;
         border-radius: 8px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        transition: all 0.3s ease-in-out;
     }
 
         .form-control:focus {
-            border-color: #343a40;
-            box-shadow: 0 0 5px rgba(52, 58, 64, 0.5);
+            border-color: #f57c00;
+            box-shadow: 0px 0px 5px rgba(245, 124, 0, 0.5);
         }
 
-    .btn-dark {
-        background-color: #343a40;
+    .btn-primary {
+        background: #f57c00;
         border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        transition: 0.3s;
     }
 
-        .btn-dark:hover {
-            background-color: #212529;
+        .btn-primary:hover {
+            background: #e66a00;
+            box-shadow: 0px 5px 15px rgba(245, 124, 0, 0.4);
         }
+
+    .alert-success {
+        background: #d4edda;
+        color: #155724;
+        border-left: 5px solid #28a745;
+        padding: 10px;
+        border-radius: 8px;
+    }
 </style>
+
+<h2>Payroll Calculation</h2>
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success mt-3 message" role="alert">
+        @TempData["AlertMessage"]
+    </div>
+}
+<form asp-action="PayrollCalculation" asp-controller="Payroll" method="post">
+    <div class="form-group">
+        <label for="Username">Select Employee:</label>
+        <select asp-for="Username" asp-items="ViewBag.Users" class="form-control" required>
+            <option value="">-- Select Employee --</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label>Basic Salary:</label>
+        <input type="number" asp-for="BasicSalary" id="basicSalary" class="form-control" oninput="calculatePayroll()" required />
+    </div>
+    <div class="form-group">
+        <label>Allowance:</label>
+        <input type="number" asp-for="Allowance" id="allowance" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Bonus:</label>
+        <input type="number" asp-for="Bonus" id="bonus" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Commission:</label>
+        <input type="number" asp-for="Commission" id="commission" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Overtime Pay:</label>
+        <input type="number" asp-for="OvertimePay" id="overtime" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Expense to Office:</label>
+        <input type="number" asp-for="ExpenseToOffice" id="expense" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Gross Pay:</label>
+        <input type="number" asp-for="GrossPay" id="grossPay" class="form-control" readonly />
+    </div>
+    <hr>
+    <h4>Deductions</h4>
+    <div class="form-group">
+        <label>Income Tax:</label>
+        <input type="number" asp-for="IncomeTax" id="incomeTax" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>PF:</label>
+        <input type="number" asp-for="PF" id="pf" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Employee State Insurance:</label>
+        <input type="number" asp-for="EmployeeStateInsurance" id="esi" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Professional Tax:</label>
+        <input type="number" asp-for="ProfessionalTax" id="professionalTax" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Loan Repayments:</label>
+        <input type="number" asp-for="LoanRepayments" id="loanRepayments" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Leave:</label>
+        <input type="number" asp-for="LeaveDeductions" id="leave" class="form-control" oninput="calculatePayroll()" />
+    </div>
+    <div class="form-group">
+        <label>Total Deductions:</label>
+        <input type="number" asp-for="TotalDeductions" id="deductions" class="form-control" readonly />
+    </div>
+    <hr>
+    <div class="form-group">
+        <label>Net Salary:</label>
+        <input type="number" asp-for="NetSalary" id="netSalary" class="form-control" readonly />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Save Payroll</button>
+</form>
+
+<script>
+    function calculatePayroll() {
+        let inputs = document.querySelectorAll("input");
+        let values = {};
+        inputs.forEach(input => values[input.id] = parseFloat(input.value) || 0);
+
+        let grossPay = values.basicSalary + values.allowance + values.bonus + values.commission + values.overtime + values.expense;
+        document.getElementById("grossPay").value = grossPay;
+
+        let deductions = values.incomeTax + values.pf + values.esi + values.professionalTax + values.loanRepayments + values.leave;
+        document.getElementById("deductions").value = deductions;
+
+        document.getElementById("netSalary").value = grossPay - deductions;
+    }
+</script>
