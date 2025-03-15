@@ -31,7 +31,7 @@ namespace project.Data.Repository
         Task<SalarySlip> GetSalarySlipByEmployeeIdAsync(int employeeId);
         Task<SalarySlip> GetSalarySlipByIdAsync(int id);
         Task<IEnumerable<Users>> GetEmployeesAsync();
-        Task<bool> UpdatePasswordAsync(int userId, string currentPassword, string newPassword);
+        Task<string> UpdatePasswordAsync(int userId, string currentPassword, string newPassword);
 
 
     }

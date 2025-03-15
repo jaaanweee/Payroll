@@ -3,7 +3,7 @@ using project.UI.Models;
 using System.Diagnostics;
 
 namespace project.UI.Controllers
-{
+{   
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

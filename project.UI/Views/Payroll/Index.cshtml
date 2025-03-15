@@ -1,0 +1,89 @@
+﻿@model IEnumerable<project.Data.Models.Domain.PayrollCalculationModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BasicSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Allowance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bonus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Commission)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OvertimePay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GrossPay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalDeductions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NetSalary)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BasicSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Allowance)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bonus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Commission)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OvertimePay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GrossPay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDeductions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NetSalary)
+            </td>
+            <td>
+                    <button type="button" class="btn btn-primary" onclick="downloadPdf(@item.Id)">Generate Slip</button>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script type="text/javascript">
+    function downloadPdf(id) {
+        window.location.href = '/Payroll/DownloadSlip/' + id;
+    }
+</script>

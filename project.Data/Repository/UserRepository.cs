@@ -172,30 +172,31 @@ namespace project.Data.Repository
             var result = await _sqlDataAccess.GetData<Salary, dynamic>("sp_GetAllSalaries", new { });
             return result;
         }
-        public async Task<bool> UpdatePasswordAsync(int userId, string currentPassword, string newPassword)
+        public async Task<string> UpdatePasswordAsync(int userId, string currentPassword, string newPassword)
         {
             var user = await GetUserByIdAsync(userId);
-            if (user == null) return false; // ❌ User not found
+            if (user == null) return "User not found.";
 
             // ✅ Check if the current password matches the hashed password in DB
-            if (!BCrypt.Net.BCrypt.Verify(currentPassword, user.Password))
+            if ((currentPassword!=user.Password))
             {
-                return false; // ❌ Password is incorrect
+                return "Current password is incorrect.";
+            }
+            if(newPassword == user.Password)
+            {
+                return "New password should not be the same as the old password.";
             }
 
-            // ✅ Hash the new password before storing
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(newPassword);
-
+            
             var parameters = new
             {
                 UserId = userId,
-                NewPassword = hashedPassword // ✅ Store the hashed password
+                NewPassword = newPassword 
             };
 
-            // ✅ Use SaveData since it's an UPDATE operation
             await _sqlDataAccess.SaveData("sp_UpdatePassword", parameters);
 
-            return true; // ✅ Password updated successfully
+            return "Success";
         }
 
        

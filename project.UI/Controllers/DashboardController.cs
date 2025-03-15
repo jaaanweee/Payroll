@@ -224,18 +224,18 @@ namespace project.UI.Controllers
             }
 
             // Hash passwords before checking (optional if hashing is implemented)
-            string hashedCurrentPassword = HashPassword(currentPassword);
-            string hashedNewPassword = HashPassword(newPassword);
+            string hashedCurrentPassword = currentPassword;
+            string hashedNewPassword = newPassword;
 
-            bool success = await _userRepository.UpdatePasswordAsync(userId.Value, hashedCurrentPassword, hashedNewPassword);
+            var result = await _userRepository.UpdatePasswordAsync(userId.Value, hashedCurrentPassword, hashedNewPassword);
 
-            if (success)
+            if (result == "Success")
             {
                 TempData["SuccessMessage"] = "Password updated successfully.";
             }
             else
             {
-                TempData["ErrorMessage"] = "Current password is incorrect.";
+                TempData["ErrorMessage"] = result;
             }
 
             return RedirectToAction("Profile");

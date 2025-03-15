@@ -11,6 +11,8 @@ namespace project.Data.Repository
     {
         Task<int> AddPayrollAsync(PayrollCalculationModel model);
         Task<IEnumerable<Users>> GetAllUsersForDropdownAsync();
+        Task<IEnumerable<PayrollCalculationModel>> GetAllPayrollsAsync(); // Added async method
+        Task<PayrollCalculationModel> GetPayrollByIdAsync(int id); // Changed to async
 
     }
 }
