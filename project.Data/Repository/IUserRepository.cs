@@ -33,6 +33,5 @@ namespace project.Data.Repository
         Task<IEnumerable<Users>> GetEmployeesAsync();
         Task<string> UpdatePasswordAsync(int userId, string currentPassword, string newPassword);
 
-
     }
 }

@@ -5,86 +5,79 @@
 @await Html.PartialAsync("_HRNavbar")
 
 <div class="container-fluid p-5">
-    <div class="text-center mb-5">
-        
+    <div class="text-center mb-4">
         <p class="lead">An intuitive dashboard to manage employees efficiently.</p>
     </div>
 
-    <div class="row g-5">
-        <!-- Employee Overview -->
-        <div class="col-lg-8">
-            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
-                <h4 class="text-dark text-uppercase fw-bold mb-4">Employee Overview</h4>
-                <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Role</th>
-                            <th>Status</th>
-                            <th>Salary Band</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="hover-row">
-                            <td>John Doe</td>
-                            <td>Software Engineer</td>
-                            <td><span class="badge bg-success">Active</span></td>
-                            <td>$80K - $100K</td>
-                            <td><button class="btn btn-outline-dark btn-sm">View</button></td>
-                        </tr>
-                        <tr class="hover-row">
-                            <td>Jane Smith</td>
-                            <td>HR Manager</td>
-                            <td><span class="badge bg-warning">On Leave</span></td>
-                            <td>$70K - $90K</td>
-                            <td><button class="btn btn-outline-dark btn-sm">View</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- Quick Search & Filters -->
-        <div class="col-lg-4">
-            <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
-                <h4 class="text-dark text-uppercase fw-bold mb-4">Quick Search</h4>
-                <input type="text" class="form-control mb-4 hover-input" placeholder="Search employee...">
-                <h5 class="fw-bold mb-3">Filters</h5>
-                <select class="form-select mb-3 hover-select">
-                    <option>Status</option>
-                    <option>Active</option>
-                    <option>On Leave</option>
-                </select>
-                <select class="form-select mb-3 hover-select">
-                    <option>Job Role</option>
-                    <option>Software Engineer</option>
-                    <option>HR Manager</option>
-                </select>
-                <button class="btn btn-dark w-100 hover-btn">Apply Filters</button>
-            </div>
-        </div>
+    <!-- Employee Overview -->
+    <div class="p-4 bg-white shadow-lg rounded-3 card-hover">
+        <h4 class="text-dark text-uppercase fw-bold mb-4">Employee Overview</h4>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Salary Band (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover-row">
+                    <td>Ruchika Vete</td>
+                    <td>Software Engineer</td>
+                    <td><span class="badge bg-success">Active</span></td>
+                    <td>₹8,00,000 - ₹10,00,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Rajesh Kumar</td>
+                    <td>HR Manager</td>
+                    <td><span class="badge bg-warning">On Leave</span></td>
+                    <td>₹7,00,000 - ₹9,00,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Aisha Patel</td>
+                    <td>Data Analyst</td>
+                    <td><span class="badge bg-success">Active</span></td>
+                    <td>₹6,50,000 - ₹8,50,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Santosh Vete</td>
+                    <td>Marketing Manager</td>
+                    <td><span class="badge bg-danger">Resigned</span></td>
+                    <td>₹9,00,000 - ₹11,00,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Vikram Singh</td>
+                    <td>DevOps Engineer</td>
+                    <td><span class="badge bg-success">Active</span></td>
+                    <td>₹10,00,000 - ₹12,50,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Sneha Mehta</td>
+                    <td>UI/UX Designer</td>
+                    <td><span class="badge bg-warning">On Leave</span></td>
+                    <td>₹7,50,000 - ₹9,50,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Amit Tiwari</td>
+                    <td>Network Administrator</td>
+                    <td><span class="badge bg-success">Active</span></td>
+                    <td>₹6,00,000 - ₹7,50,000</td>
+                </tr>
+                <tr class="hover-row">
+                    <td>Pooja Verma</td>
+                    <td>Product Manager</td>
+                    <td><span class="badge bg-success">Active</span></td>
+                    <td>₹12,00,000 - ₹15,00,000</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
 <style>
     body {
         background-color: #f9fafb;
-    }
-
-    .btn-outline-dark {
-        border-color: #343a40;
-        color: #343a40;
-    }
-
-        .btn-outline-dark:hover {
-            background-color: #343a40;
-            color: white;
-            border-color: #343a40;
-        }
-
-    .bg-light {
-        background-color: #f9f9f9 !important;
     }
 
     .shadow-lg {
@@ -95,14 +88,30 @@
         border-radius: 12px;
     }
 
-    .form-control, .form-select {
+    .table-container {
+        width: 100%;
+        background: #fff;
+        padding: 20px;
         border-radius: 10px;
-        transition: all 0.3s ease;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     }
 
-        .form-control:focus, .form-select:focus {
-            border-color: #343a40;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+    }
+
+        .table thead {
+            background-color: #222;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .table th, .table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
         }
 
     .table-hover tbody tr:hover {
@@ -116,29 +125,13 @@
         transition: all 0.3s ease;
     }
 
-    .hover-btn:hover {
-        background-color: #343a40;
-        color: white;
-        border-color: #343a40;
-    }
-
-    .hover-input:hover, .hover-select:hover {
-        border-color: #6c757d;
-        box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
-    }
-
-    .hover-btn {
-        transition: background-color 0.3s ease, border-color 0.3s ease;
-    }
-
     .card-hover {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
     }
 
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
         }
-
-   
 </style>

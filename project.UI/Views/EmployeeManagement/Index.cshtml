@@ -3,8 +3,10 @@
 @{
     ViewData["Title"] = "User List";
 }
+@await Html.PartialAsync("_AdminNavbar")
 
 <h2>User List</h2>
+
 <form method="get" action="@Url.Action("EditUserPage", "EmployeeManagement")">
     <div class="input-group mb-3">
         <input type="text" class="form-control" name="searchQuery" placeholder="Search by ID or Username" />
@@ -12,33 +14,92 @@
     </div>
 </form>
 
-<table class="table table-bordered table-hover">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-            <th>Role</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in Model)
-        {
+<div class="table-responsive">
+    <table class="table table-hover custom-table">
+        <thead>
             <tr>
-                <td>@user.Id</td>
-                <td>@user.Username</td>
-                <td>@user.Email</td>
-                <td>@user.PhoneNumber</td>
-                <td>@user.Role</td>
-                <td>
-                    <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-primary btn-sm">Edit</a>
-                    <a href="@Url.Action("Delete", "User", new { id = user.Id })" class="btn btn-danger btn-sm">Delete</a>
-                </td>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Role</th>
+                <th>Action</th>
             </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@user.Role</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "User", new { id = user.Id })" class="btn btn-edit btn-sm rounded-pill px-3">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    body {
+        background-color: #f9fafb;
+    }
+
+    .custom-table {
+        width: 100%;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+        .custom-table thead {
+            background-color: #222;
+            color: white;
+            text-transform: uppercase;
         }
-    </tbody>
-</table>
 
+        .custom-table th, .custom-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
 
+    .table-hover tbody tr:hover {
+        background-color: #e9ecef;
+        cursor: pointer;
+    }
+
+    .btn-edit {
+        background-color: #65350F;
+        border: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .btn-edit:hover {
+            background-color: #4A260B;
+            color: white;
+        }
+
+    .rounded-pill {
+        border-radius: 50px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>

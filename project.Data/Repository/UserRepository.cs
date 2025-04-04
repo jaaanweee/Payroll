@@ -3,7 +3,6 @@ using project.Data.Models.Domain;
 using System.Collections.Generic;
 using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
-using BCrypt.Net;
 
 namespace project.Data.Repository
 {
@@ -199,7 +198,17 @@ namespace project.Data.Repository
             return "Success";
         }
 
-       
+        public async Task SaveOtpAsync(int userId, string otp)
+        {
+            await _sqlDataAccess.SaveData("sp_SaveOtp", new { UserId = userId, Otp = otp });
+        }
+
+        public async Task<bool> ValidateOtpAsync(int userId, string otp)
+        {
+            var result = await _sqlDataAccess.GetData<int, dynamic>("sp_ValidateOtp", new { UserId = userId, Otp = otp });
+            return result.Any();
+        }
+
 
     }
 }

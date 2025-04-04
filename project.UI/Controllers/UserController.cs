@@ -194,19 +194,6 @@ namespace project.Controllers
         }
 
 
-
-        //public async Task<IActionResult> Getslip(int id)
-        //{
-        //    var user = await _userRepository.GetUserByIdAsync(id);
-
-        //    if (user == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return View(user); // Pass user data to view
-        //}
-
-
         public async Task<IActionResult> Getslip(int id)
         {
             var salarySlip = await _userRepository.GetSalarySlipByIdAsync(id);

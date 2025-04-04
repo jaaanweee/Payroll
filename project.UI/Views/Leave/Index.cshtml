@@ -4,44 +4,146 @@
     ViewData["Title"] = "Leave Requests";
 }
 @await Html.PartialAsync("_HRNavbar")
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #f8f8f8, #e6e6e6);
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .table-container {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .table thead {
+            background-color: #222;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .table th, .table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            word-wrap: break-word;
+        }
+
+        /* Same background color for all rows */
+        .table tbody tr {
+            background-color: #f8f8f8;
+            transition: all 0.3s ease;
+        }
+
+            .table tbody tr:hover {
+                background-color: #ffefe5;
+                transform: scale(1.01);
+                cursor: pointer;
+            }
+
+    .action-buttons {
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+        margin-left: -30px; /* Move buttons slightly more left */
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            transform: scale(1.05);
+        }
+</style>
+
 <h2>Leave Requests</h2>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Username</th>
-            <th>Leave Type</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Reason</th>
-            <th>Status</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var leave in Model)
-        {
+<div class="table-container">
+    <table class="table">
+        <thead>
             <tr>
-                <td>@leave.Username</td>
-                <td>@leave.LeaveType</td>
-                <td>@leave.StartDate.ToShortDateString()</td>
-                <td>@leave.EndDate.ToShortDateString()</td>
-                <td>@leave.Reason</td>
-                <td>@(leave.Status == 1 ? "Pending" : leave.Status == 2 ? "Approved" : "Rejected")</td>
-                <td>
-                    @if (leave.Status == 1)
-                    {
-                        <form asp-action="ApproveLeave" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@leave.LeaveID" />
-                            <button type="submit" class="btn btn-success">Approve</button>
-                        </form>
-                        <form asp-action="RejectLeave" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@leave.LeaveID" />
-                            <button type="submit" class="btn btn-danger">Reject</button>
-                        </form>
-                    }
-                </td>
+                <th>Username</th>
+                <th>Leave Type</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Status</th>
+                <th>Action</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var leave in Model)
+            {
+                <tr>
+                    <td>@leave.Username</td>
+                    <td>@leave.LeaveType</td>
+                    <td>@leave.StartDate.ToShortDateString()</td>
+                    <td>@leave.EndDate.ToShortDateString()</td>
+                    <td>@(leave.Status == 1 ? "Pending" : leave.Status == 2 ? "Approved" : "Rejected")</td>
+                    <td>
+                        @if (leave.Status == 1)
+                        {
+                            <div class="action-buttons">
+                                <form asp-action="ApproveLeave" method="post">
+                                    <input type="hidden" name="id" value="@leave.LeaveID" />
+                                    <button type="submit" class="btn btn-success">Approve</button>
+                                </form>
+                                <form asp-action="RejectLeave" method="post">
+                                    <input type="hidden" name="id" value="@leave.LeaveID" />
+                                    <button type="submit" class="btn btn-danger">Reject</button>
+                                </form>
+                            </div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

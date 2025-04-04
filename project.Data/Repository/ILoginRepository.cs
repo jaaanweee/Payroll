@@ -10,7 +10,10 @@ namespace project.Data.Repository
         Task LogUserLoginAsync(int userId);
         Task LogUserLogoutAsync(int userId);
         Task<IEnumerable<UserLoginHistoryViewModel>> GetUserLoginHistoryAsync();
-
-
+        Task<Users?> GetUserByPhoneAsync(string phoneNumber);
+        Task UpdatePasswordAsync(int userId, string newPassword);
+        Task SaveOtpAsync(string email, string otp);
+        Task<Users?> GetUserByEmailAsync(string email);
+        Task<bool> ValidateOtpAsync(string email, string otp);
     }
 }

@@ -23,19 +23,29 @@ namespace project.Data.Repository
 
         public async Task AddExpenseAsync(Expense expense)
         {
-            var parameters = new
+            try
             {
-                UserID = expense.UserID,
-                ExpenseType = expense.ExpenseType,
-                Amount = expense.Amount,
-                ExpenseDate = expense.ExpenseDate,
-                Description = expense.Description,
-                ReceiptPath = expense.ReceiptFileName
-            };
+                var parameters = new
+                {
+                    UserID = expense.UserID,
+                    ExpenseType = expense.ExpenseType,
+                    Amount = expense.Amount,
+                    ExpenseDate = expense.ExpenseDate,
+                    Description = expense.Description,
+                    ReceiptPath = expense.ReceiptFileName
+                };
 
-            await _sqlDataAccess.SaveData("AddExpense", parameters);
+                Console.WriteLine($"Inserting Expense: {expense.ExpenseType}, Amount: {expense.Amount}");
+
+                await _sqlDataAccess.SaveData("AddExpense", parameters);
+
+                Console.WriteLine("Expense Inserted Successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error inserting expense: {ex.Message}");
+            }
         }
-
 
         public async Task<IEnumerable<Expense>> GetUserExpensesAsync(int userId)
         {

@@ -17,14 +17,18 @@ namespace project.Data.Models.Domain
         public decimal Commission { get; set; }
         public decimal OvertimePay { get; set; }
         public decimal ExpenseToOffice { get; set; }
+        public decimal Expense { get; set; }
         public decimal GrossPay { get; set; }
         public decimal IncomeTax { get; set; }
         public decimal PF { get; set; }
         public decimal EmployeeStateInsurance { get; set; }
+        public decimal ESI { get; set; }
         public decimal ProfessionalTax { get; set; }
         public decimal LoanRepayments { get; set; }
         public decimal LeaveDeductions { get; set; }
         public decimal TotalDeductions { get; set; }
         public decimal NetSalary { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string? AmountInWords { get; set; }
     }
 }

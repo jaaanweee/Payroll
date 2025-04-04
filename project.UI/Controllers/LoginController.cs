@@ -1,15 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using project.Data.Models.Domain;
 using project.Data.Repository;
+using project.Data.Services;
+using IEmailService = project.Data.Repository.IEmailService;
 
 namespace project.UI.Controllers
 {
     public class LoginController : Controller
-    {
+    {       
         private readonly ILoginRepository _usersRepo;
-        public LoginController(ILoginRepository usersRepo)
+        private readonly IEmailService _emailService;
+
+        public LoginController(ILoginRepository usersRepo, IEmailService emailService)
         {
             _usersRepo = usersRepo;
+            _emailService = emailService;
         }
 
         public IActionResult Login()
@@ -110,6 +115,79 @@ namespace project.UI.Controllers
             var history = await _usersRepo.GetUserLoginHistoryAsync();
             return View(history);
         }
+
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(string email)
+        {
+            var user = await _usersRepo.GetUserByEmailAsync(email);
+            if (user == null)
+            {
+                TempData["msg"] = "Email not found!";
+                return View();
+            }
+
+            // Generate OTP
+            string otp = new Random().Next(100000, 999999).ToString();
+
+            // Save OTP to database (or cache)
+            await _usersRepo.SaveOtpAsync(user.Email, otp);
+
+            // Send OTP via email (implement email service)
+            await _emailService.SendEmailAsync(user.Email, "Password Reset OTP", $"Your OTP is {otp}");
+
+            TempData["msg"] = "OTP sent to your email.";
+            return RedirectToAction("VerifyOtp", new { email });
+        }
+
+        [HttpGet]
+        public IActionResult VerifyOtp(string email)
+        {
+            ViewBag.Email = email;
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> VerifyOtp(string email, string otp)
+        {
+            var user = await _usersRepo.GetUserByEmailAsync(email);
+            if (user == null || !await _usersRepo.ValidateOtpAsync(user.Email, otp))
+            {
+                TempData["msg"] = "Invalid OTP!";
+                return View();
+            }
+
+            // Redirect to reset password page
+            return RedirectToAction("ResetPassword", new { email });
+        }
+
+        [HttpGet]
+        public IActionResult ResetPassword(string email)
+        {
+            ViewBag.Email = email;
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(string email, string newPassword)
+        {
+            var user = await _usersRepo.GetUserByEmailAsync(email);
+            if (user == null)
+            {
+                TempData["msg"] = "User not found!";
+                return View();
+            }
+
+            await _usersRepo.UpdatePasswordAsync(user.Id, newPassword);
+            TempData["msg"] = "Password reset successful!";
+            return RedirectToAction("Login");
+        }
+
 
     }
 }

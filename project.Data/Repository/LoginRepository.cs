@@ -88,61 +88,38 @@ namespace project.Data.Repository
 
             return employees.FirstOrDefault();
         }
+
+        public async Task<Users?> GetUserByPhoneAsync(string phoneNumber)
+        {
+            var result = await _db.GetData<Users, dynamic>("GetUserByPhone", new { PhoneNumber = phoneNumber });
+            return result.FirstOrDefault();
+        }
+
+        public async Task UpdatePasswordAsync(int userId, string newPassword)
+        {
+            await _db.SaveData("sp_UpdatePassword", new { UserId = userId, NewPassword = newPassword });
+        }
+
+        public async Task SaveOtpAsync(string email, string otp)
+        {
+            await _db.SaveData("sp_SaveOtp", new { Email = email, Otp = otp });
+        }
+
+        public async Task<Users?> GetUserByEmailAsync(string email)
+        {
+            var result = await _db.GetData<Users, dynamic>("sp_GetUserByEmail", new { Email = email });
+            return result.FirstOrDefault();
+        }
+        public async Task<bool> ValidateOtpAsync(string email, string otp)
+        {
+            var result = await _db.GetData<int, dynamic>("sp_ValidateOtp", new { Email = email, Otp = otp });
+            return result.FirstOrDefault() == 1; // Returns true if OTP matches
+        }
+
+
     }
 }
 
 
-/*  public async Task<bool> AddAsync(Users users)
-  {
-      try
-      {
-          await _db.SaveData("AddUser", new { Users.Username, Users.Password, Users.Email,Users.PhoneNumber });
-          return true;
-      }
-      catch (Exception ex)
-      {
-          return false;
-      }
-  }
 
-  public async Task<bool> UpdateAsync(Users users)
-  {
-      try
-      {
-          await _db.SaveData("updateUser", users);
-          return true;
-      }
-      catch (Exception ex)
-      {
-          return false;
-      }
-  }
-
-  public async Task<bool> DeleteAsync(int id)
-  {
-      try
-      {
-          await _db.SaveData("DeleteById", new { Id = id });
-          return true;
-      }
-      catch (Exception ex)
-      {
-          return false;
-      }
-  }
-  public async Task<Users?> GetByIdAsync(int id)
-  {
-      IEnumerable<Users> result = await _db.GetData<Users, dynamic>
-          ("GetUserById", new { Id = id });
-      return result.FirstOrDefault();
-
-  }
-
-  public async Task<IEnumerable<Users>> GetAllAsync()
-  {
-      string query = "GetAllUsers";
-      return await _db.GetData<Users, dynamic>(query, new { });
-  }
-}
-*/
 

@@ -5,67 +5,69 @@
 @* Include the Navbar *@
 @await Html.PartialAsync("_AdminNavbar")
 
-@* Top Navigation Bar *@
-
-
 @* Main Dashboard Section *@
-<div class="container mt-4">
-    <div class="row g-4">
+<div class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center overflow-hidden p-2">
+    <div class="row w-100 g-2 d-flex flex-nowrap">
 
         @* Left Panel: Key Metrics *@
-        <div class="col-md-6 d-flex align-items-center">
-            <div class="p-4 bg-light rounded">
-                <h1 class="fw-bold">DASHBOARD OVERVIEW</h1>
-                <p>Track and manage your workforce and payroll operations effortlessly.</p>
-                <ul class="list-unstyled">
+        <div class="col-md-5 d-flex align-items-center">
+            <div class="p-3 bg-light rounded w-100">
+                <h4 class="fw-bold text-center">DASHBOARD OVERVIEW</h4>
+                <ul class="list-unstyled mb-0 text-center">
                     <li><strong>Total Employees:</strong> 120</li>
                     <li><strong>Active Employees:</strong> 110</li>
                     <li><strong>Pending Leave Requests:</strong> 5</li>
-                    <li><strong>Payroll Processed This Month:</strong> $50,000</li>
+                    <li><strong>Payroll Processed This Month:</strong> ₹50,000</li>
                 </ul>
             </div>
         </div>
 
         @* Right Panel: Notifications/Alerts *@
-        <div class="col-md-6 position-relative">
-            <div class="bg-light rounded p-4 h-100">
-                <h5>Notifications & Alerts</h5>
-                <ul class="list-group">
+        <div class="col-md-5 d-flex align-items-center">
+            <div class="bg-light rounded p-3 w-100">
+                <h5 class="text-center">Notifications & Alerts</h5>
+                <ul class="list-group text-center">
                     <li class="list-group-item">3 Pending Leave Approvals</li>
                     <li class="list-group-item">Payroll Due Tomorrow</li>
                     <li class="list-group-item">New Employee Added</li>
                 </ul>
-                <button class="btn btn-dark position-absolute" style="bottom: 20px; right: 20px;">VIEW DETAILS</button>
             </div>
         </div>
     </div>
 
-    @* Bottom Section: Quick Links *@
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-body text-center">
-                    <h5>Add Employee</h5>
-                    <p>Quickly onboard a new team member.</p>
-                    <a href="#" class="btn btn-outline-dark">Go</a>
+    @* Pie Chart *@
+    <div class="row w-100 mt-2 d-flex justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <div class="card shadow-sm" style="width: 100%; max-width: 300px;">
+                <div class="card-body p-2">
+                    <h6 class="text-center">Employee Distribution</h6>
+                    <canvas id="employeeChart" style="width: 100%; height: 200px;"></canvas>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-body text-center">
-                    <h5>Generate Payroll</h5>
-                    <p>Process monthly salaries with one click.</p>
-                    <a href="#" class="btn btn-outline-dark">Go</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    @* Action Buttons *@
-    <div class="d-flex justify-content-center gap-3 mt-4">
-        <a href="#" class="btn btn-outline-dark">Add Employee</a>
-        <a href="#" class="btn btn-outline-dark">VIEW REPORTS</a>
-        <a href="#" class="btn btn-dark">SETTINGS</a>
     </div>
 </div>
+
+@* Pie Chart Script *@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var ctx = document.getElementById("employeeChart").getContext("2d");
+        new Chart(ctx, {
+            type: "pie",
+            data: {
+                labels: ["Active Employees", "Inactive Employees"],
+                datasets: [{
+                    data: [110, 10],
+                    backgroundColor: ["#A0A0A0", "#D3D3D3"],
+                    borderColor: "#FFFFFF",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true
+            }
+        });
+    });
+</script>

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-5 rounded-4 border-0 otp-card" style="max-width: 500px; width: 100%; text-align: center;">
+        <h3 class="mb-4">Enter OTP</h3>
+        <form asp-action="VerifyOtp" method="post">
+            <input type="hidden" name="email" value="@ViewBag.Email" />
+            <div class="mb-4">
+                <label class="form-label fw-bold">OTP:</label>
+                <input type="text" name="otp" required class="form-control text-center p-3 rounded-3" placeholder="Enter OTP" />
+            </div>
+            <button type="submit" class="btn btn-dark w-100 p-3 rounded-3">Verify</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .otp-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border-radius: 20px;
+    }
+
+        .otp-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+</style>

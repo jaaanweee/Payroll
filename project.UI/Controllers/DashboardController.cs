@@ -202,11 +202,7 @@ namespace project.UI.Controllers
             ViewData["Title"] = "User Management";
             return View();
         }
-        //public IActionResult PayrollCalculation()
-        //{
-        //    ViewData["Title"] = "Payroll Calculation";
-        //    return View();
-        //}
+        
 
         [HttpPost]
         [ValidateAntiForgeryToken]

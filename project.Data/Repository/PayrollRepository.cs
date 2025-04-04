@@ -1,14 +1,14 @@
-﻿using project.Data.DataAccess;
+﻿using Microsoft.Data.SqlClient;
+using project.Data.DataAccess;
 using project.Data.Models.Domain;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Data;
 using System.Threading.Tasks;
 
 namespace project.Data.Repository
 {
-    public class PayrollRepository: IPayrollRepository
+    public class PayrollRepository : IPayrollRepository
     {
         private readonly ISqlDataAccess _sqlDataAccess;
 
@@ -44,11 +44,18 @@ namespace project.Data.Repository
 
         public async Task<IEnumerable<Users>> GetAllUsersForDropdownAsync()
         {
-            var result = await _sqlDataAccess.GetData<Users, dynamic>("sp_GetAllUsersForDropdown", new { });
-            return result;
+            return await _sqlDataAccess.GetData<Users, dynamic>("sp_GetAllUsersForDropdown", new { });
         }
 
-    }
+        public async Task<IEnumerable<PayrollCalculationModel>> GetAllPayrollsAsync()
+        {
+            return await _sqlDataAccess.GetData<PayrollCalculationModel, dynamic>("GetAllPayrolls", new { });
+        }
 
+        public async Task<PayrollCalculationModel> GetPayrollByIdAsync(int id)
+        {
+            var result = await _sqlDataAccess.GetData<PayrollCalculationModel, dynamic>("GetPayrollById", new { Id = id });
+            return result?.FirstOrDefault();
+        }
+    }
 }
-    

@@ -70,9 +70,17 @@ namespace project.UI.Controllers
             {
                 foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
                 {
-                    Console.WriteLine(error.ErrorMessage);
+                    Console.WriteLine($"Model Error: {error.ErrorMessage}");
                 }
-                return View(expense);
+                var userExpenses = (await _expenseRepository.GetExpensesByUserIdAsync(userId.Value)).ToList();
+
+                var model = new ExpenseViewModel
+                {
+                    Expense = expense,  // Preserve user input
+                    UserExpenses = userExpenses
+                };
+
+                return View(model);
             }
 
             // Check if a file is uploaded
